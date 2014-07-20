@@ -1,0 +1,19 @@
+%banner--MAIN{
+  width: 100%;
+  overflow: hidden;
+  height: 15em;
+  position: relative;
+}
+
+%banner--background-image{
+  width: 100%;
+}
+
+%banner--header{
+  color: white;
+  font-size: 3em;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 1em;
+  left: 4em;
+}

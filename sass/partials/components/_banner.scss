@@ -1,0 +1,16 @@
+@import "banner/extends";
+@import "banner/variables";
+@import "banner/mixins";
+
+
+.banner--MAIN{
+  @extend %banner--MAIN;
+}
+
+.banner--background-image{
+  @extend %banner--background-image;
+}
+
+.banner--header{
+  @extend %banner--header;
+}

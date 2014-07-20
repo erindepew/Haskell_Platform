@@ -1,0 +1,12 @@
+@import "button/extends";
+@import "button/variables";
+@import "button/mixins";
+
+
+.button--MAIN{
+  @extend %button--MAIN;
+}
+
+.button--label{
+  @extend %button--label;
+}
