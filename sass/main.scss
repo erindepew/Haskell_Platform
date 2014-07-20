@@ -1,0 +1,15 @@
+//compass files
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/images";
+@import "compass/css3/font-face";
+
+//partials
+@import "partials/global/extends";
+
+// use compass watch to compile css
+
+
+h1{
+  @extend %h1;
+}
