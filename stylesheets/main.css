@@ -63,8 +63,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 1, ../sass/partials/global/_extends.scss */
-h1 {
-  color: blue;
-  font-size: 5em;
+/* line 1, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MAIN {
+  width: 100%;
+  background-color: #23172b;
+}
+
+/* line 7, ../sass/partials/components/navigation/_extends.scss */
+.navigation--links-list {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 12, ../sass/partials/components/navigation/_extends.scss */
+.navigation--links {
+  color: white;
+  font-size: 2em;
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+  width: 22%;
+  padding: 1em 0;
 }

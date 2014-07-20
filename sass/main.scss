@@ -4,12 +4,13 @@
 @import "compass/css3/images";
 @import "compass/css3/font-face";
 
-//partials
+//global styles
+
 @import "partials/global/extends";
+@import "partials/global/variables";
+
+//components
+
+@import "partials/components/navigation";
 
 // use compass watch to compile css
-
-
-h1{
-  @extend %h1;
-}

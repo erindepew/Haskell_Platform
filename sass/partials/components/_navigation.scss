@@ -1,0 +1,16 @@
+@import "navigation/extends";
+@import "navigation/variables";
+@import "navigation/mixins";
+
+
+.navigation--MAIN{
+  @extend %navigation--MAIN;
+}
+
+.navigation--links-list{
+  @extend %navigation--links-list;
+}
+
+.navigation--links{
+  @extend %navigation--links;
+}
