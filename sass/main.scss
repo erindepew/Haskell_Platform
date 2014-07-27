@@ -6,13 +6,18 @@
 
 //global styles
 
-@import "partials/global/extends";
-@import "partials/global/variables";
+@import "partials/global/extends/all";
+@import "partials/global/variables/all";
+
+@import "partials/global/variables/colors";
+
+
 
 //components
 
 @import "partials/components/navigation";
 @import "partials/components/banner";
 @import "partials/components/button";
+@import "partials/components/promo-text";
 
 // use compass watch to compile css

@@ -1,20 +1,22 @@
 %navigation--MAIN{
   width: 100%;
   background-color: $dark-purple;
+  padding: 0 0 0 11.5%;
 }
 
 
 %navigation--links-list{
-  width: 100%;
-  text-align: center;
+  width: 92%;
 }
 
 %navigation--links{
-  color: $white;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-weight: bold;
   font-size: 2em;
-  font-family: Helvetica, Arial, sans-serif;
   display: inline-block;
-  width: 22%;
+  width: 24.5%;
   padding: 1em 0;
+  text-align: left;
 }
 

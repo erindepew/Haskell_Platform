@@ -1,0 +1,38 @@
+%promo-text--MAIN{
+  width: 30%;
+  display: inline-block;
+  float: left;
+  padding: 0 1.5%;
+  margin-bottom: 7em;
+  &:first-child{
+    padding: 0 1.5% 0 0;
+  }
+  &:last-child{
+    padding: 0 0 0 1.5%;
+  }
+}
+
+%_promo-text--container{
+  margin: 0 auto;
+  width: 77%;
+  overflow: visible;
+  display: block;
+  margin-top: 3.5em;
+}
+
+
+%promo-text--header{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: $dark-purple;
+  font-size: 2.25em;
+  font-weight: bold;
+  margin-bottom: 0.55em;
+}
+
+%promo-text--text{
+  font-family: 'Open sans', Helvetica, Arial, sans-serif;
+  color: $black;
+  font-size: 1.25em;
+  line-height: 125%;
+  font-weight: normal;
+}

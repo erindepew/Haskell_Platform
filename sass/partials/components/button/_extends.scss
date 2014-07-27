@@ -1,19 +1,18 @@
-
-
 %button--MAIN{
-  width: 25%;
+  width: 40%;
   margin: 0 auto;
   background-color: $dark-purple;
-  border-radius: 0.75em;
-  padding: 1em 0;
+  border-radius: 0.8em;
+  padding: 2em 0;
   border: none;
   display: block;
+  margin-bottom: 7em;
 }
 
 %button--label{
   color: $white;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 2.5em;
-
-
+  font-size: 3.25em;
+  font-weight: bold;
+  text-transform: uppercase;
 }

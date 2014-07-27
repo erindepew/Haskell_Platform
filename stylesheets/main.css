@@ -67,29 +67,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .navigation--MAIN {
   width: 100%;
   background-color: #23172b;
+  padding: 0 0 0 11.5%;
 }
 
-/* line 7, ../sass/partials/components/navigation/_extends.scss */
+/* line 8, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links-list {
-  width: 100%;
-  text-align: center;
+  width: 92%;
 }
 
 /* line 12, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links {
-  color: white;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-weight: bold;
   font-size: 2em;
-  font-family: Helvetica, Arial, sans-serif;
   display: inline-block;
-  width: 22%;
+  width: 24.5%;
   padding: 1em 0;
+  text-align: left;
 }
 
 /* line 1, ../sass/partials/components/banner/_extends.scss */
 .banner--MAIN {
   width: 100%;
   overflow: hidden;
-  height: 15em;
+  height: 11em;
   position: relative;
 }
 
@@ -103,25 +105,73 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   font-size: 3em;
   font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
   position: absolute;
-  top: 1em;
-  left: 4em;
+  top: 1.1em;
+  left: 11.5%;
 }
 
-/* line 3, ../sass/partials/components/button/_extends.scss */
+/* line 1, ../sass/partials/components/button/_extends.scss */
 .button--MAIN {
-  width: 25%;
+  width: 40%;
   margin: 0 auto;
   background-color: #23172b;
-  border-radius: 0.75em;
-  padding: 1em 0;
+  border-radius: 0.8em;
+  padding: 2em 0;
   border: none;
   display: block;
+  margin-bottom: 7em;
 }
 
-/* line 13, ../sass/partials/components/button/_extends.scss */
+/* line 12, ../sass/partials/components/button/_extends.scss */
 .button--label {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 2.5em;
+  font-size: 3.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/partials/components/promo-text/_extends.scss */
+.promo-text--MAIN {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  padding: 0 1.5%;
+  margin-bottom: 7em;
+}
+/* line 7, ../sass/partials/components/promo-text/_extends.scss */
+.promo-text--MAIN:first-child {
+  padding: 0 1.5% 0 0;
+}
+/* line 10, ../sass/partials/components/promo-text/_extends.scss */
+.promo-text--MAIN:last-child {
+  padding: 0 0 0 1.5%;
+}
+
+/* line 15, ../sass/partials/components/promo-text/_extends.scss */
+._promo-text--container {
+  margin: 0 auto;
+  width: 77%;
+  overflow: visible;
+  display: block;
+  margin-top: 3.5em;
+}
+
+/* line 24, ../sass/partials/components/promo-text/_extends.scss */
+.promo-text--header {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #23172b;
+  font-size: 2.25em;
+  font-weight: bold;
+  margin-bottom: 0.55em;
+}
+
+/* line 32, ../sass/partials/components/promo-text/_extends.scss */
+.promo-text--text {
+  font-family: 'Open sans', Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 1.25em;
+  line-height: 125%;
+  font-weight: normal;
 }

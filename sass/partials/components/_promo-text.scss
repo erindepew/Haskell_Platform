@@ -1,0 +1,20 @@
+@import "promo-text/extends";
+@import "promo-text/variables";
+@import "promo-text/mixins";
+
+
+.promo-text--MAIN{
+  @extend %promo-text--MAIN;
+}
+
+._promo-text--container{
+  @extend %_promo-text--container;
+}
+
+.promo-text--header{
+  @extend %promo-text--header;
+}
+
+.promo-text--text{
+  @extend %promo-text--text;
+}
