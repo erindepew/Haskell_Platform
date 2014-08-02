@@ -1,0 +1,11 @@
+@import "subheader/extends";
+@import "subheader/variables";
+@import "subheader/mixins";
+
+
+
+
+.subheader--MAIN{
+  @extend %subheader--MAIN;
+
+}

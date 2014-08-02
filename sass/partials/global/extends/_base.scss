@@ -1,7 +1,23 @@
 
 
 %h1 {
-  color: white;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: $white;
+  font-family: $font-sans;
   font-size: 3em;
+}
+
+
+%h3{
+  color: $dark-purple;
+  font-family: $font-sans;
+  font-size: 1.85em;
+  font-weight: bold;
+}
+
+%p{
+  font-family: $font-sans;
+  color: $dark-grey;
+  font-size: 1.25em;
+  line-height: 125%;
+  font-weight: normal;
 }

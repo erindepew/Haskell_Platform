@@ -1,0 +1,37 @@
+@import "packages/extends";
+@import "packages/variables";
+@import "packages/mixins";
+
+
+.packages--MAIN{
+  @extend %packages--MAIN;
+}
+
+.packages--header{
+  @extend %packages--header;
+}
+
+
+.packages--header-table-row{
+  @extend %packages--header-table-row;
+}
+
+.packages--table-row{
+  @extend %packages--table-row;
+}
+
+.packages--package-table-column{
+  @extend %packages--package-table-column;
+}
+
+.packages--version-table-column{
+  @extend %packages--version-table-column;
+}
+
+.packages--date-table-column{
+  @extend %packages--date-table-column;
+}
+
+.packages--table{
+  @extend %packages--table;
+}

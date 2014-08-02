@@ -1,0 +1,20 @@
+@import "release-info/extends";
+@import "release-info/variables";
+@import "release-info/mixins";
+
+
+.release-info--MAIN{
+  @extend %release-info--MAIN;
+}
+
+.release-info--header{
+  @extend %release-info--header;
+}
+
+.release-info--information{
+  @extend %release-info--information;
+}
+
+.release-info--info-list{
+  @extend %release-info--info-list;
+}

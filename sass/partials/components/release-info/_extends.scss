@@ -1,0 +1,50 @@
+%release-info--MAIN{
+  width: 50%;
+  float: left;
+  display:inline-block;
+  margin-top: 2.5em;
+}
+
+%release-info--header{
+  @extend %p;
+  font-weight: bold;
+  float: left;
+  display:inline-block;
+  margin-bottom: 1em;
+  clear: left;
+  & a{
+    @extend %p;
+    font-weight: inherit;
+    float: inherit;
+    display: inherit;
+    font-size: 100%;
+    text-decoration: none;
+    &:hover{
+      font-style: italic;
+    }
+  }
+}
+
+%release-info--information{
+  @extend %p;
+  float:left;
+  display:inline-block;
+  margin: 0 0 1em 0.75em;
+}
+
+%release-info--info-list{
+  @extend %p;
+  float:left;
+  margin: 0 0 1em 0.75em;
+  display:inline-block;
+  & a{
+    @extend %p;
+    font-size: 100%;
+    float: inherit;
+    display: inherit;
+    text-decoration: none;
+    &:hover{
+      font-style: italic;
+    }
+  }
+}

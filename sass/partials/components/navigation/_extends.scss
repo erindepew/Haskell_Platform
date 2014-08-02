@@ -10,8 +10,7 @@
 }
 
 %navigation--links{
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  color: #ffffff;
+  @extend %h1;
   font-weight: bold;
   font-size: 2em;
   display: inline-block;

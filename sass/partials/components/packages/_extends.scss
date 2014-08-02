@@ -1,0 +1,45 @@
+%packages--MAIN{
+  width: 50%;
+  display: inline-block;
+  float: right;
+  margin-top: 2.5em;
+}
+
+%packages--header{
+  @extend %p;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+%packages--table{
+  width: 100%;
+
+}
+
+%packages--table-row{
+  padding: 1em;
+
+}
+
+%packages--header-table-row{
+  background-color: $dark-purple;
+  padding: 1em;
+
+}
+
+%packages--package-table-column{
+  @extend %p;
+  font-weight: bold;
+
+}
+
+%packages--version-table-column{
+  @extend %p;
+
+}
+
+%packages--date-table-column{
+  @extend %p;
+
+}

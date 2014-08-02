@@ -10,8 +10,7 @@
 }
 
 %button--label{
-  color: $white;
-  font-family: Helvetica, Arial, sans-serif;
+  @extend %h1;
   font-size: 3.25em;
   font-weight: bold;
   text-transform: uppercase;

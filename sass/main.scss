@@ -5,13 +5,8 @@
 @import "compass/css3/font-face";
 
 //global styles
-
-@import "partials/global/extends/all";
 @import "partials/global/variables/all";
-
-@import "partials/global/variables/colors";
-
-
+@import "partials/global/extends/all";
 
 //components
 
@@ -19,5 +14,8 @@
 @import "partials/components/banner";
 @import "partials/components/button";
 @import "partials/components/promo-text";
+@import "partials/components/subheader";
+@import "partials/components/release-info";
+@import "partials/components/packages";
 
 // use compass watch to compile css
