@@ -1,0 +1,36 @@
+%footer--MAIN{
+  display: inline-block;
+  width: 86%;
+  margin-top: 10em;
+  position:relative;
+  background-color: $dark-purple;
+  padding: 0 7%;
+}
+
+%footer--content{
+  width: 23%;
+  float: left;
+  margin: 2.5em 0 5em 0;
+  padding: 0 1%;
+}
+
+%footer--content-header{
+  @extend %p;
+  font-size: 1.5em;
+  color: $white;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+%footer--content-list-link{
+  @extend %p;
+  color: $white;
+  line-height: 110%;
+  margin-bottom: 0.4em;
+  & a{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+  }
+}

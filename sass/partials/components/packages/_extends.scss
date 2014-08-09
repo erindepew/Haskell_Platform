@@ -1,8 +1,8 @@
 %packages--MAIN{
-  width: 50%;
+  width: 43%;
   display: inline-block;
   float: right;
-  margin-top: 2.5em;
+  margin: 2.5em 7% 0 0;
 }
 
 %packages--header{
@@ -14,11 +14,15 @@
 
 %packages--table{
   width: 100%;
-
+  margin-top: 1.5em;
 }
 
 %packages--table-row{
   padding: 1em;
+  background-color: rgba($dark-purple, 0.2);
+  &:nth-of-type(2n){
+    background-color: $white;
+  }
 
 }
 
@@ -31,15 +35,20 @@
 %packages--package-table-column{
   @extend %p;
   font-weight: bold;
+  margin: 0.5em 0 0.5em 1em;
+  display:inline-block;
+  width: 60%;
 
 }
 
 %packages--version-table-column{
   @extend %p;
+  width: 25%;
 
 }
 
 %packages--date-table-column{
   @extend %p;
+  width: 25%;
 
 }

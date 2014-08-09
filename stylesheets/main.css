@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 17, ../sass/partials/global/extends/_base.scss */
-.promo-text--text, .release-info--header, .release-info--header a, .release-info--information, .release-info--info-list, .release-info--info-list a, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column {
+.promo-text--text, .release-info--header, .release-info--header a, .release-info--information, .release-info--info-list, .release-info--info-list a, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #323232;
   font-size: 1.25em;
@@ -89,9 +89,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN {
-  width: 100%;
+  width: 93%;
   background-color: #23172b;
-  padding: 0 0 0 11.5%;
+  padding: 0 0 0 7%;
 }
 
 /* line 8, ../sass/partials/components/navigation/_extends.scss */
@@ -107,6 +107,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 24.5%;
   padding: 1em 0;
   text-align: left;
+}
+/* line 20, ../sass/partials/components/navigation/_extends.scss */
+.navigation--links:last-child {
+  text-align: center;
 }
 
 /* line 1, ../sass/partials/components/banner/_extends.scss */
@@ -151,7 +155,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, ../sass/partials/components/promo-text/_extends.scss */
 .promo-text--MAIN {
-  width: 30%;
+  width: 31.25%;
   display: inline-block;
   float: left;
   padding: 0 1.5%;
@@ -169,7 +173,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 15, ../sass/partials/components/promo-text/_extends.scss */
 ._promo-text--container {
   margin: 0 auto;
-  width: 77%;
+  width: 86%;
   overflow: visible;
   display: block;
   margin-top: 3.5em;
@@ -189,10 +193,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, ../sass/partials/components/release-info/_extends.scss */
 .release-info--MAIN {
-  width: 50%;
+  width: 43%;
   float: left;
   display: inline-block;
-  margin-top: 2.5em;
+  margin: 2.5em 0 0 7%;
 }
 
 /* line 8, ../sass/partials/components/release-info/_extends.scss */
@@ -243,10 +247,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, ../sass/partials/components/packages/_extends.scss */
 .packages--MAIN {
-  width: 50%;
+  width: 43%;
   display: inline-block;
   float: right;
-  margin-top: 2.5em;
+  margin: 2.5em 7% 0 0;
 }
 
 /* line 8, ../sass/partials/components/packages/_extends.scss */
@@ -259,20 +263,92 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 15, ../sass/partials/components/packages/_extends.scss */
 .packages--table {
   width: 100%;
+  margin-top: 1.5em;
 }
 
 /* line 20, ../sass/partials/components/packages/_extends.scss */
 .packages--table-row {
   padding: 1em;
+  background-color: rgba(35, 23, 43, 0.2);
+}
+/* line 23, ../sass/partials/components/packages/_extends.scss */
+.packages--table-row:nth-of-type(2n) {
+  background-color: white;
 }
 
-/* line 25, ../sass/partials/components/packages/_extends.scss */
+/* line 29, ../sass/partials/components/packages/_extends.scss */
 .packages--header-table-row {
   background-color: #23172b;
   padding: 1em;
 }
 
-/* line 31, ../sass/partials/components/packages/_extends.scss */
+/* line 35, ../sass/partials/components/packages/_extends.scss */
 .packages--package-table-column {
   font-weight: bold;
+  margin: 0.5em 0 0.5em 1em;
+  display: inline-block;
+  width: 60%;
+}
+
+/* line 44, ../sass/partials/components/packages/_extends.scss */
+.packages--version-table-column {
+  width: 25%;
+}
+
+/* line 50, ../sass/partials/components/packages/_extends.scss */
+.packages--date-table-column {
+  width: 25%;
+}
+
+/* line 17, ../sass/partials/components/_packages.scss */
+.packages--header-table-row .packages--package-table-column {
+  color: white;
+}
+/* line 20, ../sass/partials/components/_packages.scss */
+.packages--header-table-row .packages--version-table-column {
+  color: white;
+}
+/* line 23, ../sass/partials/components/_packages.scss */
+.packages--header-table-row .packages--date-table-column {
+  color: white;
+}
+
+/* line 1, ../sass/partials/components/footer/_extends.scss */
+.footer--MAIN {
+  display: inline-block;
+  width: 86%;
+  margin-top: 10em;
+  position: relative;
+  background-color: #23172b;
+  padding: 0 7%;
+}
+
+/* line 10, ../sass/partials/components/footer/_extends.scss */
+.footer--content {
+  width: 23%;
+  float: left;
+  margin: 2.5em 0 5em 0;
+  padding: 0 1%;
+}
+
+/* line 17, ../sass/partials/components/footer/_extends.scss */
+.footer--content-header {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+/* line 25, ../sass/partials/components/footer/_extends.scss */
+.footer--content-list-link {
+  color: white;
+  line-height: 110%;
+  margin-bottom: 0.4em;
+}
+/* line 30, ../sass/partials/components/footer/_extends.scss */
+.footer--content-list-link a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
 }

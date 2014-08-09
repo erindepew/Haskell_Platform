@@ -1,0 +1,23 @@
+@import "footer/extends";
+@import "footer/variables";
+@import "footer/mixins";
+
+
+
+.footer--MAIN{
+  @extend %footer--MAIN;
+}
+
+
+.footer--content{
+  @extend %footer--content;
+}
+
+
+.footer--content-header{
+  @extend %footer--content-header;
+}
+
+.footer--content-list-link{
+  @extend %footer--content-list-link;
+}
