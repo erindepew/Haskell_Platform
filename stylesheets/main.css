@@ -116,14 +116,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 93%;
   background-color: #281434;
   padding: 0 0 0 7%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 5;
 }
 
-/* line 8, ../sass/partials/components/navigation/_extends.scss */
+/* line 11, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links-list {
   width: 92%;
 }
 
-/* line 12, ../sass/partials/components/navigation/_extends.scss */
+/* line 15, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links {
   font-weight: bold;
   font-size: 1.75em;
@@ -132,7 +135,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 1em 0;
   text-align: left;
 }
-/* line 20, ../sass/partials/components/navigation/_extends.scss */
+/* line 23, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links:last-child {
   text-align: center;
 }
@@ -143,21 +146,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   overflow: hidden;
   height: 10em;
   position: relative;
+  padding-top: 4em;
 }
 
-/* line 8, ../sass/partials/components/banner/_extends.scss */
+/* line 9, ../sass/partials/components/banner/_extends.scss */
 .banner--background-image {
   width: 100%;
 }
 
-/* line 12, ../sass/partials/components/banner/_extends.scss */
+/* line 13, ../sass/partials/components/banner/_extends.scss */
 .banner--header {
   left: 7%;
   position: absolute;
-  margin-top: 2.25em;
+  margin-top: 2.85em;
 }
 
-/* line 18, ../sass/partials/components/banner/_extends.scss */
+/* line 19, ../sass/partials/components/banner/_extends.scss */
 .banner--title {
   font-weight: bold;
   top: 1.1em;
@@ -166,7 +170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0.25em 0 0 0.5em;
 }
 
-/* line 28, ../sass/partials/components/banner/_extends.scss */
+/* line 29, ../sass/partials/components/banner/_extends.scss */
 .banner--logo:before {
   font-family: Haskell_icon;
   content: "\e600";
@@ -184,9 +188,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: none;
   display: block;
   margin-bottom: 7em;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+  transition: background-color 0.5s ease;
+}
+/* line 12, ../sass/partials/components/button/_extends.scss */
+.button--MAIN:hover {
+  background-color: #442259;
 }
 
-/* line 12, ../sass/partials/components/button/_extends.scss */
+/* line 17, ../sass/partials/components/button/_extends.scss */
 .button--label {
   font-size: 3em;
   font-weight: bold;
