@@ -19,7 +19,7 @@
 
 %packages--table-row{
   padding: 1em;
-  background-color: rgba($dark-purple, 0.2);
+  background-color: rgba($medium-purple, 0.2);
   &:nth-of-type(2n){
     background-color: $white;
   }
@@ -27,7 +27,7 @@
 }
 
 %packages--header-table-row{
-  background-color: $dark-purple;
+  background-color: $medium-purple;
   padding: 1em;
 
 }
@@ -37,7 +37,6 @@
   font-weight: bold;
   margin: 0.5em 0 0.5em 1em;
   display:inline-block;
-  width: 60%;
 
 }
 

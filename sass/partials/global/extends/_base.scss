@@ -8,7 +8,7 @@
 
 
 %h3{
-  color: $dark-purple;
+  color: $light-purple;
   font-family: $font-sans;
   font-size: 1.85em;
   font-weight: bold;
@@ -20,4 +20,18 @@
   font-size: 1.25em;
   line-height: 125%;
   font-weight: normal;
+  & a{
+    font-size: 100%;
+    float: inherit;
+    display: inherit;
+    font-family: inherit;
+    color: $light-purple;
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    &:hover{
+      color: #8a45b5;
+    }
+  }
 }

@@ -12,17 +12,6 @@
   display:inline-block;
   margin-bottom: 1em;
   clear: left;
-  & a{
-    @extend %p;
-    font-weight: inherit;
-    float: inherit;
-    display: inherit;
-    font-size: 100%;
-    text-decoration: none;
-    &:hover{
-      font-style: italic;
-    }
-  }
 }
 
 %release-info--information{
@@ -37,14 +26,5 @@
   float:left;
   margin: 0 0 1em 0.75em;
   display:inline-block;
-  & a{
-    @extend %p;
-    font-size: 100%;
-    float: inherit;
-    display: inherit;
-    text-decoration: none;
-    &:hover{
-      font-style: italic;
-    }
-  }
+
 }

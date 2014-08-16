@@ -1,8 +1,8 @@
 %button--MAIN{
-  width: 40%;
+  width: 35%;
   margin: 0 auto;
-  background-color: $dark-purple;
-  border-radius: 0.8em;
+  background-color: $medium-purple;
+  border-radius: 1.75em;
   padding: 2em 0;
   border: none;
   display: block;
@@ -11,7 +11,7 @@
 
 %button--label{
   @extend %h1;
-  font-size: 3.25em;
+  font-size: 3em;
   font-weight: bold;
   text-transform: uppercase;
 }
