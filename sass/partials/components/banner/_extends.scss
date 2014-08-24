@@ -1,9 +1,9 @@
 %banner--MAIN{
   width: 100%;
   overflow: hidden;
-  height: 10em;
+  height: 7em;
   position: relative;
-  padding-top: 4em;
+  padding-top: 3em;
 }
 
 %banner--background-image{
@@ -13,7 +13,7 @@
 %banner--header{
    left: 7%;
   position:absolute;
-  margin-top: 2.85em;
+  margin-top: 1.75em;
 }
 
 %banner--title{
@@ -23,6 +23,7 @@
   display: inline-block;
   vertical-align: top;
   padding: 0.25em 0 0 0.5em;
+  letter-spacing: 0.75px;
 }
 
 %banner--logo{
@@ -30,7 +31,7 @@
     @extend %h1;
     font-family: Haskell_icon;
     content: "\e600";
-    font-size: 4.75em;
+    font-size: 3.25em;
     display: inline-block;
   }
 }

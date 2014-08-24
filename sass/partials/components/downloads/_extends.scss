@@ -1,0 +1,9 @@
+%downloads--header{
+  &:before{
+    @extend %p;
+    font-family: Haskell_icon;
+    content: "\e602";
+    font-size: 3.25em;
+    display: inline-block;
+  }
+}

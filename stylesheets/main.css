@@ -64,30 +64,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 3, ../sass/partials/global/extends/_base.scss */
-.navigation--links, .banner--title, .banner--logo:before, .button--label {
+.banner--title, .banner--logo:before, .button--label {
   color: white;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 3em;
+  font-size: 2.25em;
 }
 
 /* line 10, ../sass/partials/global/extends/_base.scss */
 .promo-text--header, .subheader--MAIN {
   color: #442259;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 1.85em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 /* line 17, ../sass/partials/global/extends/_base.scss */
-.promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link {
+.navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--header:before {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #323232;
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 125%;
   font-weight: normal;
 }
 /* line 23, ../sass/partials/global/extends/_base.scss */
-.promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a {
+.navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--header:before a {
   font-size: 100%;
   float: inherit;
   display: inherit;
@@ -99,7 +99,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition: color 0.5s ease;
 }
 /* line 33, ../sass/partials/global/extends/_base.scss */
-.promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover {
+.navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--header:before a:hover {
   color: #8a45b5;
 }
 
@@ -128,25 +128,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 15, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links {
-  font-weight: bold;
-  font-size: 1.75em;
+  color: white;
   display: inline-block;
-  width: 24.5%;
-  padding: 1em 0;
   text-align: left;
+  padding: 1em 10% 1em 0;
 }
-/* line 23, ../sass/partials/components/navigation/_extends.scss */
+/* line 21, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links:last-child {
   text-align: center;
+}
+/* line 24, ../sass/partials/components/navigation/_extends.scss */
+.navigation--links a {
+  text-decoration: none;
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+}
+/* line 29, ../sass/partials/components/navigation/_extends.scss */
+.navigation--links a:hover {
+  color: white;
 }
 
 /* line 1, ../sass/partials/components/banner/_extends.scss */
 .banner--MAIN {
   width: 100%;
   overflow: hidden;
-  height: 10em;
+  height: 7em;
   position: relative;
-  padding-top: 4em;
+  padding-top: 3em;
 }
 
 /* line 9, ../sass/partials/components/banner/_extends.scss */
@@ -158,7 +167,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .banner--header {
   left: 7%;
   position: absolute;
-  margin-top: 2.85em;
+  margin-top: 1.75em;
 }
 
 /* line 19, ../sass/partials/components/banner/_extends.scss */
@@ -168,13 +177,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: inline-block;
   vertical-align: top;
   padding: 0.25em 0 0 0.5em;
+  letter-spacing: 0.75px;
 }
 
-/* line 29, ../sass/partials/components/banner/_extends.scss */
+/* line 30, ../sass/partials/components/banner/_extends.scss */
 .banner--logo:before {
   font-family: Haskell_icon;
   content: "\e600";
-  font-size: 4.75em;
+  font-size: 3.25em;
   display: inline-block;
 }
 
@@ -184,10 +194,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0 auto;
   background-color: #361b46;
   border-radius: 1.75em;
-  padding: 2em 0;
+  padding: 1.5em 0;
   border: none;
   display: block;
-  margin-bottom: 7em;
+  margin-bottom: 6em;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
   transition: background-color 0.5s ease;
 }
@@ -198,7 +208,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 17, ../sass/partials/components/button/_extends.scss */
 .button--label {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -209,7 +219,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: inline-block;
   float: left;
   padding: 0 1.5%;
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
 /* line 7, ../sass/partials/components/promo-text/_extends.scss */
 .promo-text--MAIN:first-child {
@@ -231,7 +241,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 24, ../sass/partials/components/promo-text/_extends.scss */
 .promo-text--header {
-  font-size: 2em;
   margin-bottom: 0.55em;
 }
 
@@ -343,7 +352,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .footer--MAIN {
   display: inline-block;
   width: 86%;
-  margin-top: 10em;
+  margin-top: 6em;
   position: relative;
   background-color: #281434;
   padding: 0 7%;
@@ -353,16 +362,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .footer--content {
   width: 23%;
   float: left;
-  margin: 2.5em 0 5em 0;
+  margin: 1.75em 0 4em 0;
   padding: 0 1%;
 }
 
 /* line 17, ../sass/partials/components/footer/_extends.scss */
 .footer--content-header {
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: white;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 /* line 25, ../sass/partials/components/footer/_extends.scss */
@@ -374,7 +383,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 30, ../sass/partials/components/footer/_extends.scss */
 .footer--content-list-link a {
   text-decoration: none;
-  color: inherit;
+  color: white;
   font-family: inherit;
   font-size: inherit;
+}
+/* line 35, ../sass/partials/components/footer/_extends.scss */
+.footer--content-list-link a:hover {
+  color: white;
+  font-style: italic;
+}
+
+/* line 2, ../sass/partials/components/downloads/_extends.scss */
+.downloads--header:before {
+  font-family: Haskell_icon;
+  content: "\e602";
+  font-size: 3.25em;
+  display: inline-block;
 }

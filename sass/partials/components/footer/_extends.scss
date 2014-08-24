@@ -1,7 +1,7 @@
 %footer--MAIN{
   display: inline-block;
   width: 86%;
-  margin-top: 10em;
+  margin-top: 6em;
   position:relative;
   background-color: $dark-purple;
   padding: 0 7%;
@@ -10,16 +10,16 @@
 %footer--content{
   width: 23%;
   float: left;
-  margin: 2.5em 0 5em 0;
+  margin: 1.75em 0 4em 0;
   padding: 0 1%;
 }
 
 %footer--content-header{
   @extend %p;
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: $white;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 %footer--content-list-link{
@@ -29,8 +29,12 @@
   margin-bottom: 0.4em;
   & a{
     text-decoration: none;
-    color: inherit;
+    color: $white;
     font-family: inherit;
     font-size: inherit;
+    &:hover{
+      color: $white;
+      font-style: italic;
+    }
   }
 }

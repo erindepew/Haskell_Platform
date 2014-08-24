@@ -3,10 +3,10 @@
   margin: 0 auto;
   background-color: $medium-purple;
   border-radius: 1.75em;
-  padding: 2em 0;
+  padding: 1.5em 0;
   border: none;
   display: block;
-  margin-bottom: 7em;
+  margin-bottom: 6em;
   box-shadow: 0 1px 2px 0 rgba($black, 0.22);
   transition: background-color 0.5s ease;
   &:hover{
@@ -16,7 +16,7 @@
 
 %button--label{
   @extend %h1;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
 }

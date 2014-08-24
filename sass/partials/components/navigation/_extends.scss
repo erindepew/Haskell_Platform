@@ -13,15 +13,22 @@
 }
 
 %navigation--links{
-  @extend %h1;
-  font-weight: bold;
-  font-size: 1.75em;
+  @extend %p;
+  color: $white;
   display: inline-block;
-  width: 24.5%;
-  padding: 1em 0;
   text-align: left;
+  padding: 1em 10% 1em 0;
   &:last-child{
     text-align: center;
+  }
+  & a{
+    text-decoration: none;
+    color: $white;
+    font-family: inherit;
+    font-size: inherit;
+    &:hover{
+      color: $white;
+    }
   }
 }
 
