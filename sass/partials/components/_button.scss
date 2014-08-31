@@ -10,3 +10,12 @@
 .button--label{
   @extend %button--label;
 }
+
+
+.button--DOWNLOAD{
+  @extend %button--DOWNLOAD;
+
+  .button--label{
+    @extend %button--label-DOWNLOAD;
+  }
+}

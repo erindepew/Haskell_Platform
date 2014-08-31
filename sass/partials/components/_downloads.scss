@@ -7,3 +7,23 @@
 .downloads--header{
   @extend %downloads--header;
 }
+
+
+.downloads--MAC{
+  @extend %downloads--MAC;
+  .button--DOWNLOAD{
+    @extend %buttons--MAC;
+  }
+}
+
+.downloads--subheader{
+  @extend %downloads--subheader;
+}
+
+.downloads--text{
+  @extend %downloads--text;
+}
+
+.downloads--instructions{
+  @extend %downloads--instructions;
+}

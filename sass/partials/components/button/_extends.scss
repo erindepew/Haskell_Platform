@@ -14,9 +14,20 @@
   }
 }
 
+
+%button--DOWNLOAD{
+  @extend %button--MAIN;
+  padding: 0.85em 0;
+}
+
 %button--label{
   @extend %h1;
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+%button--label-DOWNLOAD{
+  @extend %button--label;
+  font-size: 1em;
 }

@@ -64,14 +64,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 3, ../sass/partials/global/extends/_base.scss */
-.banner--title, .banner--logo:before, .button--label {
+.banner--title, .banner--logo:before, .button--DOWNLOAD .button--label, .button--label {
   color: white;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 2.25em;
 }
 
 /* line 10, ../sass/partials/global/extends/_base.scss */
-.promo-text--header, .subheader--MAIN {
+.promo-text--header, .subheader--MAIN, .downloads--header {
   color: #442259;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 17, ../sass/partials/global/extends/_base.scss */
-.navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--header:before {
+.navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--subheader, .downloads--text, .downloads--instructions li {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #323232;
   font-size: 1em;
@@ -87,7 +87,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
 }
 /* line 23, ../sass/partials/global/extends/_base.scss */
-.navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--header:before a {
+.navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--subheader a, .downloads--text a, .downloads--instructions li a {
   font-size: 100%;
   float: inherit;
   display: inherit;
@@ -99,7 +99,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition: color 0.5s ease;
 }
 /* line 33, ../sass/partials/global/extends/_base.scss */
-.navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--header:before a:hover {
+.navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--subheader a:hover, .downloads--text a:hover, .downloads--instructions li a:hover {
   color: #8a45b5;
 }
 
@@ -189,7 +189,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 1, ../sass/partials/components/button/_extends.scss */
-.button--MAIN {
+.button--DOWNLOAD, .button--MAIN {
   width: 35%;
   margin: 0 auto;
   background-color: #361b46;
@@ -202,15 +202,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition: background-color 0.5s ease;
 }
 /* line 12, ../sass/partials/components/button/_extends.scss */
-.button--MAIN:hover {
+.button--DOWNLOAD:hover, .button--MAIN:hover {
   background-color: #442259;
 }
 
-/* line 17, ../sass/partials/components/button/_extends.scss */
-.button--label {
+/* line 18, ../sass/partials/components/button/_extends.scss */
+.button--DOWNLOAD {
+  padding: 0.85em 0;
+}
+
+/* line 23, ../sass/partials/components/button/_extends.scss */
+.button--DOWNLOAD .button--label, .button--label {
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/* line 30, ../sass/partials/components/button/_extends.scss */
+.button--DOWNLOAD .button--label {
+  font-size: 1em;
 }
 
 /* line 1, ../sass/partials/components/promo-text/_extends.scss */
@@ -393,10 +403,63 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: italic;
 }
 
-/* line 2, ../sass/partials/components/downloads/_extends.scss */
+/* line 1, ../sass/partials/components/downloads/_extends.scss */
+.downloads--header {
+  font-size: 1.3em;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.75em;
+}
+/* line 7, ../sass/partials/components/downloads/_extends.scss */
 .downloads--header:before {
-  font-family: Haskell_icon;
+  color: black;
+  font-family: 'Haskell_icon';
   content: "\e602";
   font-size: 3.25em;
+  display: inline-block;
+}
+
+/* line 16, ../sass/partials/components/downloads/_extends.scss */
+.downloads--MAC {
+  width: 50%;
+  padding: 0 25%;
+}
+
+/* line 22, ../sass/partials/components/downloads/_extends.scss */
+.downloads--MAC .button--DOWNLOAD {
+  width: 49.2%;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+/* line 26, ../sass/partials/components/downloads/_extends.scss */
+.downloads--MAC .button--DOWNLOAD:first-of-type {
+  margin-right: 1%;
+}
+
+/* line 31, ../sass/partials/components/downloads/_extends.scss */
+.downloads--subheader {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 140%;
+  font-weight: bold;
+}
+
+/* line 41, ../sass/partials/components/downloads/_extends.scss */
+.downloads--text {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin: 0 auto 1em;
+}
+/* line 47, ../sass/partials/components/downloads/_extends.scss */
+.downloads--text:first-of-type {
+  margin: 0 auto 0.5em;
+}
+
+/* line 52, ../sass/partials/components/downloads/_extends.scss */
+.downloads--instructions {
+  margin: 0.4em 0 2em 0;
   display: inline-block;
 }
