@@ -467,6 +467,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .downloads--instructions {
   margin: 0.4em 0 2em 0;
   display: inline-block;
+  color: red;
 }
 
 /* line 21, ../sass/partials/components/_downloads.scss */
