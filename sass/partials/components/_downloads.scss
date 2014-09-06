@@ -10,10 +10,22 @@
 
 
 .downloads--MAC{
-  @extend %downloads--MAC;
+  @extend %downloads--section;
   .button--DOWNLOAD{
     @extend %buttons--MAC;
   }
+}
+
+.downloads--WINDOWS, .downloads--LINUX{
+  @extend %downloads--section;
+  .downloads--header{
+    clear: both;
+  }
+
+  .button--DOWNLOAD{
+    @extend %buttons--ALTERNATE;
+  }
+
 }
 
 .downloads--subheader{

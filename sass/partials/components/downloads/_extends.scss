@@ -13,7 +13,7 @@
   }
 }
 
-%downloads--MAC{
+%downloads--section{
   width: 50%;
   padding: 0 25%;
 }
@@ -26,6 +26,11 @@
   &:first-of-type{
     margin-right: 1%;
   }
+}
+
+%buttons--ALTERNATE{
+  width: 80%;
+  margin-bottom: 1em;
 }
 
 %downloads--subheader{
@@ -56,3 +61,4 @@
     @extend %p;
   }
 }
+
