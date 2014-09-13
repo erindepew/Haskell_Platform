@@ -1,15 +1,25 @@
 %packages--MAIN{
-  width: 43%;
-  display: inline-block;
-  float: right;
-  margin: 2.5em 7% 0 0;
+  width: 86%;
+  margin: 2.5em auto 0;
+  @include breakpoint($breakpoint--second-layout){
+    width: 43%;
+    float: right;
+    display: inline-block;
+    float: left;
+  }
 }
 
 %packages--header{
   @extend %p;
   font-weight: bold;
   width: 100%;
-  text-align: center;
+  float: left;
+  margin: 1em 0 0.75em;
+  @include breakpoint($breakpoint--second-layout){
+    text-align: center;
+    float: none;
+    margin: 0;
+  }
 }
 
 %packages--table{

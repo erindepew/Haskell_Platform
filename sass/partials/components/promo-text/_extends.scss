@@ -1,14 +1,23 @@
 %promo-text--MAIN{
-  width: 31.25%;
+  width: 100%;
   display: inline-block;
   float: left;
-  padding: 0 1.5%;
-  margin-bottom: 4em;
-  &:first-child{
-    padding: 0 1.5% 0 0;
-  }
+  margin-bottom: 1.5em;
   &:last-child{
-    padding: 0 0 0 1.5%;
+    margin-bottom: 2.5em;
+  }
+
+  @include breakpoint($breakpoint--second-layout){
+    width: 31.25%;
+    margin-bottom: 4em;
+    &:first-child{
+      padding: 0 1.5% 0 0;
+    }
+    &:last-child{
+      padding: 0 0 0 1.5%;
+      margin-bottom: 4em;
+    }
+    padding: 0 1.5%;
   }
 }
 
@@ -17,13 +26,21 @@
   width: 86%;
   overflow: visible;
   display: block;
-  margin-top: 3.5em;
+  margin-top: 2em;
+  @include breakpoint($breakpoint--second-layout){
+    margin-top: 3.5em;
+  }
 }
 
 
 %promo-text--header{
   @extend %h2;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.35em;
+  text-align: center;
+  @include breakpoint($breakpoint--second-layout){
+    text-align: left;
+    margin-bottom: 0.55em;
+  }
 }
 
 %promo-text--text{

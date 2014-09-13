@@ -1,16 +1,24 @@
 %button--MAIN{
-  width: 35%;
+  width: 86%;
   margin: 0 auto;
   background-color: $medium-purple;
   border-radius: 1.75em;
   padding: 1.5em 0;
   border: none;
   display: block;
-  margin-bottom: 6em;
+  margin-bottom: 3.75em;
   box-shadow: 0 1px 2px 0 rgba($black, 0.22);
   transition: background-color 0.5s ease;
   &:hover{
      background-color: $light-purple;
+  }
+  @include breakpoint($breakpoint--second-layout){
+    width: 60%;
+    margin-bottom: 6em;
+  }
+  @include breakpoint($breakpoint--third-layout){
+    width: 35%;
+    margin-bottom: 6em;
   }
 }
 
