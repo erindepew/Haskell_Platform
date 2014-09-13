@@ -130,7 +130,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #FFFFFF;
   display: inline-block;
   text-align: left;
-  padding: 1em 9% 1em 0;
+  padding: 1em 7% 1em 0;
 }
 /* line 21, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links:last-child {
@@ -434,24 +434,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 4em;
   position: relative;
   background-color: #281434;
-  padding: 0 7%;
+  padding: 0 7% 3em;
 }
 @media (min-width: 700px) {
   /* line 1, ../sass/partials/components/footer/_extends.scss */
   .footer--MAIN {
     margin-top: 6em;
+    padding: 0 7%;
   }
 }
 
-/* line 13, ../sass/partials/components/footer/_extends.scss */
+/* line 14, ../sass/partials/components/footer/_extends.scss */
 .footer--content {
-  width: 23%;
+  width: 49%;
   float: left;
-  margin: 1.75em 0 4em 0;
-  padding: 0 1%;
+  margin: 1.5em 0 1em;
+  text-align: center;
+}
+/* line 19, ../sass/partials/components/footer/_extends.scss */
+.footer--content:nth-child(2n) {
+  float: right;
+}
+@media (min-width: 700px) {
+  /* line 14, ../sass/partials/components/footer/_extends.scss */
+  .footer--content {
+    width: 23%;
+    float: left;
+    margin: 1.75em 0 4em 0;
+    padding: 0 1%;
+    text-align: left;
+  }
 }
 
-/* line 20, ../sass/partials/components/footer/_extends.scss */
+/* line 32, ../sass/partials/components/footer/_extends.scss */
 .footer--content-header {
   font-size: 1.25em;
   color: #FFFFFF;
@@ -459,20 +474,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 0.5em;
 }
 
-/* line 28, ../sass/partials/components/footer/_extends.scss */
+/* line 40, ../sass/partials/components/footer/_extends.scss */
 .footer--content-list-link {
   color: #FFFFFF;
   line-height: 110%;
   margin-bottom: 0.4em;
 }
-/* line 33, ../sass/partials/components/footer/_extends.scss */
+/* line 45, ../sass/partials/components/footer/_extends.scss */
 .footer--content-list-link a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
 }
-/* line 38, ../sass/partials/components/footer/_extends.scss */
+/* line 50, ../sass/partials/components/footer/_extends.scss */
 .footer--content-list-link a:hover {
   color: #FFFFFF;
   font-style: italic;
@@ -496,28 +511,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 16, ../sass/partials/components/downloads/_extends.scss */
 .downloads--MAC, .downloads--WINDOWS, .downloads--LINUX {
-  width: 50%;
-  padding: 0 25%;
+  width: 86%;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  /* line 16, ../sass/partials/components/downloads/_extends.scss */
+  .downloads--MAC, .downloads--WINDOWS, .downloads--LINUX {
+    width: 50%;
+  }
 }
 
-/* line 22, ../sass/partials/components/downloads/_extends.scss */
+/* line 25, ../sass/partials/components/downloads/_extends.scss */
 .downloads--MAC .button--DOWNLOAD {
   width: 49.2%;
   margin-bottom: 1em;
   float: left;
 }
-/* line 26, ../sass/partials/components/downloads/_extends.scss */
+/* line 29, ../sass/partials/components/downloads/_extends.scss */
 .downloads--MAC .button--DOWNLOAD:first-of-type {
   margin-right: 1%;
 }
 
-/* line 31, ../sass/partials/components/downloads/_extends.scss */
+/* line 34, ../sass/partials/components/downloads/_extends.scss */
 .downloads--WINDOWS .button--DOWNLOAD, .downloads--LINUX .button--DOWNLOAD {
   width: 80%;
   margin-bottom: 1em;
 }
 
-/* line 36, ../sass/partials/components/downloads/_extends.scss */
+/* line 39, ../sass/partials/components/downloads/_extends.scss */
 .downloads--subheader {
   clear: both;
   float: left;
@@ -527,19 +548,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
 }
 
-/* line 46, ../sass/partials/components/downloads/_extends.scss */
+/* line 49, ../sass/partials/components/downloads/_extends.scss */
 .downloads--text {
   clear: both;
   float: left;
   width: 100%;
   margin: 0 auto 1em;
 }
-/* line 52, ../sass/partials/components/downloads/_extends.scss */
+/* line 55, ../sass/partials/components/downloads/_extends.scss */
 .downloads--text:first-of-type {
   margin: 0 auto 0.5em;
 }
 
-/* line 57, ../sass/partials/components/downloads/_extends.scss */
+/* line 60, ../sass/partials/components/downloads/_extends.scss */
 .downloads--instructions {
   margin: 0.4em 0 2em 0;
   display: inline-block;
