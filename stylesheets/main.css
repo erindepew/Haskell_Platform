@@ -118,19 +118,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 5;
+  height: 3.25em;
 }
 
-/* line 11, ../sass/partials/components/navigation/_extends.scss */
+/* line 12, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links-list {
   width: 92%;
 }
 
-/* line 15, ../sass/partials/components/navigation/_extends.scss */
+/* line 16, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links {
   color: #FFFFFF;
-  display: inline-block;
   text-align: left;
-  padding: 1em 7% 1em 0;
+  display: none;
 }
 /* line 21, ../sass/partials/components/navigation/_extends.scss */
 .navigation--links:last-child {
@@ -148,9 +148,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #FFFFFF;
 }
 @media (min-width: 700px) {
-  /* line 15, ../sass/partials/components/navigation/_extends.scss */
+  /* line 16, ../sass/partials/components/navigation/_extends.scss */
   .navigation--links {
     padding: 1em 10% 1em 0;
+    display: inline-block;
   }
 }
 
@@ -183,14 +184,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   vertical-align: top;
   padding: 0.25em 0 0 0.5em;
   letter-spacing: 0.75px;
+  font-size: 1.5em;
+}
+@media (min-width: 400px) {
+  /* line 19, ../sass/partials/components/banner/_extends.scss */
+  .banner--title {
+    font-size: 2em;
+  }
+}
+@media (min-width: 700px) {
+  /* line 19, ../sass/partials/components/banner/_extends.scss */
+  .banner--title {
+    font-size: 2.25em;
+  }
 }
 
-/* line 30, ../sass/partials/components/banner/_extends.scss */
+/* line 37, ../sass/partials/components/banner/_extends.scss */
 .banner--logo:before {
   font-family: Haskell_icon;
   content: "\e600";
-  font-size: 3.25em;
+  font-size: 2.25em;
   display: inline-block;
+}
+@media (min-width: 400px) {
+  /* line 37, ../sass/partials/components/banner/_extends.scss */
+  .banner--logo:before {
+    font-size: 2.75em;
+  }
+}
+@media (min-width: 700px) {
+  /* line 37, ../sass/partials/components/banner/_extends.scss */
+  .banner--logo:before {
+    font-size: 3.25em;
+  }
 }
 
 /* line 1, ../sass/partials/components/button/_extends.scss */

@@ -24,6 +24,13 @@
   vertical-align: top;
   padding: 0.25em 0 0 0.5em;
   letter-spacing: 0.75px;
+  font-size: 1.5em;
+  @include breakpoint($breakpoint--first-layout){
+    font-size: 2em;
+  }
+  @include breakpoint($breakpoint--second-layout){
+    font-size: 2.25em;
+  }
 }
 
 %banner--logo{
@@ -31,7 +38,14 @@
     @extend %h1;
     font-family: Haskell_icon;
     content: "\e600";
-    font-size: 3.25em;
+    font-size: 2.25em;
     display: inline-block;
+    @include breakpoint($breakpoint--first-layout){
+      font-size: 2.75em;
+    }
+    @include breakpoint($breakpoint--second-layout){
+      font-size: 3.25em;
+    }
   }
+
 }
