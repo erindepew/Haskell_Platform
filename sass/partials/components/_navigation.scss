@@ -5,12 +5,27 @@
 
 .navigation--MAIN{
   @extend %navigation--MAIN;
+
+  .navigation--links-list{
+    @extend %navigation--links-list;
+  }
+
+  .navigation--links{
+    @extend %navigation--links;
+  }
 }
 
-.navigation--links-list{
-  @extend %navigation--links-list;
-}
 
-.navigation--links{
-  @extend %navigation--links;
+
+.navigation--MOBILE{
+  @extend %navigation--MOBILE;
+
+  .navigation--links-list{
+    @extend %navigation--links-list-MOBILE;
+  }
+
+  .navigation--links{
+    @extend %navigation--links-MOBILE;
+  }
+
 }

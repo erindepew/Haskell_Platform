@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 17, ../sass/partials/global/extends/_base.scss */
-.navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--subheader, .downloads--text, .downloads--instructions li {
+.navigation--MAIN .navigation--links, .navigation--MOBILE .navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--subheader, .downloads--text, .downloads--instructions li {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #323232;
   font-size: 1em;
@@ -87,7 +87,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
 }
 /* line 23, ../sass/partials/global/extends/_base.scss */
-.navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--subheader a, .downloads--text a, .downloads--instructions li a {
+.navigation--MAIN .navigation--links a, .navigation--MOBILE .navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--subheader a, .downloads--text a, .downloads--instructions li a {
   font-size: 100%;
   float: inherit;
   display: inherit;
@@ -99,7 +99,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: color 0.5s ease;
 }
 /* line 33, ../sass/partials/global/extends/_base.scss */
-.navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--subheader a:hover, .downloads--text a:hover, .downloads--instructions li a:hover {
+.navigation--MAIN .navigation--links a:hover, .navigation--MOBILE .navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--subheader a:hover, .downloads--text a:hover, .downloads--instructions li a:hover {
   color: #8a45b5;
 }
 
@@ -122,37 +122,80 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 12, ../sass/partials/components/navigation/_extends.scss */
-.navigation--links-list {
+.navigation--MAIN .navigation--links-list {
   width: 92%;
 }
 
 /* line 16, ../sass/partials/components/navigation/_extends.scss */
-.navigation--links {
+.navigation--MAIN .navigation--links {
   color: #FFFFFF;
   text-align: left;
   display: none;
 }
 /* line 21, ../sass/partials/components/navigation/_extends.scss */
-.navigation--links:last-child {
+.navigation--MAIN .navigation--links:last-child {
   text-align: center;
 }
 /* line 24, ../sass/partials/components/navigation/_extends.scss */
-.navigation--links a {
+.navigation--MAIN .navigation--links a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
 }
 /* line 29, ../sass/partials/components/navigation/_extends.scss */
-.navigation--links a:hover {
+.navigation--MAIN .navigation--links a:hover {
   color: #FFFFFF;
 }
 @media (min-width: 700px) {
   /* line 16, ../sass/partials/components/navigation/_extends.scss */
-  .navigation--links {
+  .navigation--MAIN .navigation--links {
     padding: 1em 10% 1em 0;
     display: inline-block;
   }
+}
+
+/* line 40, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MOBILE {
+  background-color: #281434;
+  z-index: 5;
+  width: 13em;
+  height: 100%;
+  position: absolute;
+  padding: 2em 0;
+  display: block;
+}
+@media (min-width: 700px) {
+  /* line 40, ../sass/partials/components/navigation/_extends.scss */
+  .navigation--MOBILE {
+    display: none;
+  }
+}
+
+/* line 53, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MOBILE .navigation--links-list {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 59, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MOBILE .navigation--links {
+  color: #FFFFFF;
+  text-align: left;
+  padding: 1em 0 1em 0.75em;
+  border-bottom: 1px solid #442259;
+  margin: 0 0.75em;
+}
+/* line 66, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MOBILE .navigation--links a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+}
+/* line 71, ../sass/partials/components/navigation/_extends.scss */
+.navigation--MOBILE .navigation--links a:hover {
+  color: #FFFFFF;
 }
 
 /* line 1, ../sass/partials/components/banner/_extends.scss */
