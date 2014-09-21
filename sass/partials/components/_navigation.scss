@@ -13,11 +13,15 @@
   .navigation--links{
     @extend %navigation--links;
   }
+
+  #navigation--mobile-button{
+    @extend %navigation--mobile-button;
+  }
 }
 
 
 
-.navigation--MOBILE{
+#navigation--MOBILE{
   @extend %navigation--MOBILE;
 
   .navigation--links-list{

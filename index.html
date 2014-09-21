@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Haskell Platform</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/main.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
@@ -9,6 +11,7 @@
 <body>
 
 <nav class="navigation--MAIN">
+    <button id="navigation--mobile-button">menu</button>
     <ul class="navigation--links-list">
        <li class="navigation--links">
            <a href="#">Downloads</a>
@@ -26,7 +29,7 @@
 
 </nav>
 
-<nav class="navigation--MOBILE">
+<nav date-state="open" id="navigation--MOBILE">
     <ul class="navigation--links-list">
         <li class="navigation--links">
             <a href="#">Downloads</a>

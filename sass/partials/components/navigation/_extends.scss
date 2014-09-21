@@ -13,6 +13,14 @@
   width: 92%;
 }
 
+%navigation--mobile-button{
+  display: block;
+  float:right;
+  @include breakpoint($breakpoint--second-layout){
+    display: none;
+  }
+}
+
 %navigation--links{
   @extend %p;
   color: $white;
@@ -44,10 +52,6 @@
   height: 100%;
   position:absolute;
   padding: 2em 0;
-  display: block;
-  @include breakpoint($breakpoint--second-layout){
-    display: none;
-  }
 }
 
 %navigation--links-list-MOBILE{
