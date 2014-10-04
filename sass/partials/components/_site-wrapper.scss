@@ -6,8 +6,14 @@
   bottom: 100%;
   left: 0;
   z-index: 1;
+  height:     auto;
+  margin:     0px auto;
+  padding:    0px auto;
 }
 
-body {
+body html {
   overflow-x: hidden;
+  height:  100%;
+  margin:  0px auto;
+  padding: 0px auto;
 }
