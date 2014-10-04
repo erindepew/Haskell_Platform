@@ -1,25 +1,25 @@
 //function for mobile menu hide/show
 
+/*
 $(function() {
-
-
     $("#navigation--mobile-button").click(function(){
-        console.log("clicked");
-        var menu = document.getElementById("navigation--MOBILE");
-        console.log("get element" + menu);
-        var state = menu.getAttribute("data-state");
+        $("#navigation--MOBILE").animate({width: 'toggle'});
+    });
 
-        console.log("state" + state);
-        if (state == 'open'){
-            $("#navigation--MOBILE").animate({left: '-13em'}, "slow");
-            menu.setAttribute("data-state", "closed");
+});
+       */
 
-        }
+$(function() {
+    $(".open").click(function () {
+        $("#navigation--MOBILE").animate({"left": "0"}, "slow");
+        $(".open").css("display", "none");
+        $(".close").css("display", "block");
+    });
 
-        else {
-            $("#navigation--MOBILE").animate({left: '0'}, "slow");
-            menu.setAttribute("data-state", "open");
-        }
+    $(".close").click(function () {
+        $("#navigation--MOBILE").animate({"left": "-13em"}, "slow");
+        $(".open").css("display", "block");
+        $(".close").css("display", "none");
     });
 
 });
