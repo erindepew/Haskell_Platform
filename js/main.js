@@ -1,25 +1,16 @@
 //function for mobile menu hide/show
 
-/*
 $(function() {
-    $("#navigation--mobile-button").click(function(){
-        $("#navigation--MOBILE").animate({width: 'toggle'});
-    });
-
-});
-       */
-
-$(function() {
-    $(".open").click(function () {
+    $(".navigation--mobile-open").click(function () {
         $("#navigation--MOBILE").animate({"left": "0"}, "slow");
-        $(".open").css("display", "none");
-        $(".close").css("display", "block");
+        $(".navigation--mobile-open").css("display", "none");
+        $(".navigation--mobile-close").css("display", "block");
     });
 
-    $(".close").click(function () {
+    $(".navigation--mobile-close").click(function () {
         $("#navigation--MOBILE").animate({"left": "-13em"}, "slow");
-        $(".open").css("display", "block");
-        $(".close").css("display", "none");
+        $(".navigation--mobile-open").css("display", "block");
+        $(".navigation--mobile-close").css("display", "none");
     });
 
 });

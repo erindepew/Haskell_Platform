@@ -13,9 +13,18 @@
   width: 92%;
 }
 
-%navigation--mobile-button{
+
+%navigation--mobile-open{
   display: block;
-  float:right;
+  float: right;
+  @include breakpoint($breakpoint--second-layout){
+    display: none;
+  }
+}
+
+%navigation--mobile-close{
+  display: none;
+  float: right;
   @include breakpoint($breakpoint--second-layout){
     display: none;
   }
@@ -49,9 +58,14 @@
   background-color: $dark-purple;
   z-index: 5;
   width: 13em;
+  left: -13em;
   height: 100%;
   position:absolute;
   padding: 2em 0;
+  display: block;
+  @include breakpoint($breakpoint--second-layout){
+    display: none;
+  }
 }
 
 %navigation--links-list-MOBILE{

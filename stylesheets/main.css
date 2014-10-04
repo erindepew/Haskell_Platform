@@ -126,64 +126,84 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 92%;
 }
 
-/* line 16, ../sass/partials/components/navigation/_extends.scss */
-.navigation--MAIN #navigation--mobile-button {
+/* line 17, ../sass/partials/components/navigation/_extends.scss */
+.navigation--mobile-open {
   display: block;
   float: right;
 }
 @media (min-width: 700px) {
-  /* line 16, ../sass/partials/components/navigation/_extends.scss */
-  .navigation--MAIN #navigation--mobile-button {
+  /* line 17, ../sass/partials/components/navigation/_extends.scss */
+  .navigation--mobile-open {
     display: none;
   }
 }
 
-/* line 24, ../sass/partials/components/navigation/_extends.scss */
+/* line 25, ../sass/partials/components/navigation/_extends.scss */
+.navigation--mobile-close {
+  display: none;
+  float: right;
+}
+@media (min-width: 700px) {
+  /* line 25, ../sass/partials/components/navigation/_extends.scss */
+  .navigation--mobile-close {
+    display: none;
+  }
+}
+
+/* line 33, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links {
   color: #FFFFFF;
   text-align: left;
   display: none;
 }
-/* line 29, ../sass/partials/components/navigation/_extends.scss */
+/* line 38, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links:last-child {
   text-align: center;
 }
-/* line 32, ../sass/partials/components/navigation/_extends.scss */
+/* line 41, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
 }
-/* line 37, ../sass/partials/components/navigation/_extends.scss */
+/* line 46, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links a:hover {
   color: #FFFFFF;
 }
 @media (min-width: 700px) {
-  /* line 24, ../sass/partials/components/navigation/_extends.scss */
+  /* line 33, ../sass/partials/components/navigation/_extends.scss */
   .navigation--MAIN .navigation--links {
     padding: 1em 10% 1em 0;
     display: inline-block;
   }
 }
 
-/* line 48, ../sass/partials/components/navigation/_extends.scss */
+/* line 57, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE {
   background-color: #281434;
   z-index: 5;
   width: 13em;
+  left: -13em;
   height: 100%;
   position: absolute;
   padding: 2em 0;
+  display: block;
+}
+@media (min-width: 700px) {
+  /* line 57, ../sass/partials/components/navigation/_extends.scss */
+  #navigation--MOBILE {
+    display: none;
+  }
 }
 
-/* line 57, ../sass/partials/components/navigation/_extends.scss */
+/* line 71, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links-list {
   width: 100%;
   height: 100%;
 }
 
-/* line 63, ../sass/partials/components/navigation/_extends.scss */
+/* line 77, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links {
   color: #FFFFFF;
   text-align: left;
@@ -191,14 +211,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom: 1px solid #442259;
   margin: 0 0.75em;
 }
-/* line 70, ../sass/partials/components/navigation/_extends.scss */
+/* line 84, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
 }
-/* line 75, ../sass/partials/components/navigation/_extends.scss */
+/* line 89, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a:hover {
   color: #FFFFFF;
 }

@@ -13,10 +13,6 @@
   .navigation--links{
     @extend %navigation--links;
   }
-
-  #navigation--mobile-button{
-    @extend %navigation--mobile-button;
-  }
 }
 
 
@@ -32,4 +28,13 @@
     @extend %navigation--links-MOBILE;
   }
 
+}
+
+
+.navigation--mobile-open{
+  @extend %navigation--mobile-open;
+}
+
+.navigation--mobile-close{
+  @extend %navigation--mobile-close;
 }
