@@ -127,59 +127,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 17, ../sass/partials/components/navigation/_extends.scss */
-.navigation--mobile-open {
+.navigation--mobile-open, .navigation--mobile-close {
+  font-family: 'Haskell_icon';
+  background: transparent;
+  border: none;
+}
+/* line 21, ../sass/partials/components/navigation/_extends.scss */
+.navigation--mobile-open:after, .navigation--mobile-close:after {
+  content: "\e606";
+  font-size: 2.25em;
+  color: #FFFFFF;
   display: block;
-  float: right;
 }
 @media (min-width: 700px) {
   /* line 17, ../sass/partials/components/navigation/_extends.scss */
-  .navigation--mobile-open {
+  .navigation--mobile-open, .navigation--mobile-close {
     display: none;
   }
 }
 
-/* line 25, ../sass/partials/components/navigation/_extends.scss */
-.navigation--mobile-close {
-  display: none;
-  float: right;
-}
-@media (min-width: 700px) {
-  /* line 25, ../sass/partials/components/navigation/_extends.scss */
-  .navigation--mobile-close {
-    display: none;
-  }
-}
-
-/* line 33, ../sass/partials/components/navigation/_extends.scss */
+/* line 32, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links {
   color: #FFFFFF;
   text-align: left;
   display: none;
 }
-/* line 38, ../sass/partials/components/navigation/_extends.scss */
+/* line 37, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links:last-child {
   text-align: center;
 }
-/* line 41, ../sass/partials/components/navigation/_extends.scss */
+/* line 40, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
 }
-/* line 46, ../sass/partials/components/navigation/_extends.scss */
+/* line 45, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links a:hover {
   color: #FFFFFF;
 }
 @media (min-width: 700px) {
-  /* line 33, ../sass/partials/components/navigation/_extends.scss */
+  /* line 32, ../sass/partials/components/navigation/_extends.scss */
   .navigation--MAIN .navigation--links {
     padding: 1em 10% 1em 0;
     display: inline-block;
   }
 }
 
-/* line 57, ../sass/partials/components/navigation/_extends.scss */
+/* line 56, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE {
   background-color: #281434;
   z-index: 5;
@@ -191,19 +187,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 @media (min-width: 700px) {
-  /* line 57, ../sass/partials/components/navigation/_extends.scss */
+  /* line 56, ../sass/partials/components/navigation/_extends.scss */
   #navigation--MOBILE {
     display: none;
   }
 }
 
-/* line 71, ../sass/partials/components/navigation/_extends.scss */
+/* line 70, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links-list {
   width: 100%;
   height: 100%;
 }
 
-/* line 77, ../sass/partials/components/navigation/_extends.scss */
+/* line 76, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links {
   color: #FFFFFF;
   text-align: left;
@@ -211,16 +207,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom: 1px solid #442259;
   margin: 0 0.75em;
 }
-/* line 84, ../sass/partials/components/navigation/_extends.scss */
+/* line 83, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
 }
-/* line 89, ../sass/partials/components/navigation/_extends.scss */
+/* line 88, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a:hover {
   color: #FFFFFF;
+}
+
+/* line 38, ../sass/partials/components/_navigation.scss */
+.navigation--mobile-close {
+  display: none;
 }
 
 /* line 1, ../sass/partials/components/banner/_extends.scss */
@@ -663,4 +664,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 21, ../sass/partials/components/_downloads.scss */
 .downloads--WINDOWS .downloads--header, .downloads--LINUX .downloads--header {
   clear: both;
+}
+
+/* line 1, ../sass/partials/components/_site-wrapper.scss */
+.site-wrapper {
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 11, ../sass/partials/components/_site-wrapper.scss */
+body {
+  overflow-x: hidden;
 }

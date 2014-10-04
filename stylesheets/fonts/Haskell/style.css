@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'Haskell';
-	src:url('fonts/Haskell.eot?-dok88u');
-	src:url('fonts/Haskell.eot?#iefix-dok88u') format('embedded-opentype'),
-		url('fonts/Haskell.woff?-dok88u') format('woff'),
-		url('fonts/Haskell.ttf?-dok88u') format('truetype'),
-		url('fonts/Haskell.svg?-dok88u#Haskell') format('svg');
+	src:url('fonts/Haskell.eot?-51yfbq');
+	src:url('fonts/Haskell.eot?#iefix-51yfbq') format('embedded-opentype'),
+		url('fonts/Haskell.woff?-51yfbq') format('woff'),
+		url('fonts/Haskell.ttf?-51yfbq') format('truetype'),
+		url('fonts/Haskell.svg?-51yfbq#Haskell') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,24 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+	content: "\e601";
+}
+.icon-menu:before {
+	content: "\e602";
+}
+.icon-mac-icon:before {
+	content: "\e603";
+}
+.icon-windows-icon:before {
+	content: "\e604";
+}
 .icon-Haskell-Logo:before {
 	content: "\e600";
+}
+.icon-cross:before {
+	content: "\e605";
+}
+.icon-list:before {
+	content: "\e606";
 }

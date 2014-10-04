@@ -14,17 +14,16 @@
 }
 
 
-%navigation--mobile-open{
-  display: block;
-  float: right;
-  @include breakpoint($breakpoint--second-layout){
-    display: none;
+%navigation--mobile{
+  font-family: 'Haskell_icon';
+  background: transparent;
+  border: none;
+  &:after{
+    content: "\e606";
+    font-size: 2.25em;
+    color: $white;
+    display: block;
   }
-}
-
-%navigation--mobile-close{
-  display: none;
-  float: right;
   @include breakpoint($breakpoint--second-layout){
     display: none;
   }

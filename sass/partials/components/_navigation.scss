@@ -32,9 +32,10 @@
 
 
 .navigation--mobile-open{
-  @extend %navigation--mobile-open;
+  @extend %navigation--mobile;
 }
 
 .navigation--mobile-close{
-  @extend %navigation--mobile-close;
+  @extend %navigation--mobile;
+  display: none;
 }
