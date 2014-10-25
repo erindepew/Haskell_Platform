@@ -11,8 +11,14 @@
 
 .downloads--MAC{
   @extend %downloads--section;
+  margin-top: 2.5rem;
   .button--DOWNLOAD{
     @extend %buttons--MAC;
+  }
+  .downloads--header{
+    &:before{
+      content: "\e603";
+    }
   }
 }
 
@@ -26,6 +32,23 @@
     @extend %buttons--ALTERNATE;
   }
 
+}
+
+.downloads--WINDOWS{
+  .downloads--header{
+    &:before{
+      content: "\e604";
+    }
+  }
+}
+
+
+.downloads--LINUX{
+  .downloads--header{
+    &:before{
+      content: "\e601";
+    }
+  }
 }
 
 .downloads--subheader{

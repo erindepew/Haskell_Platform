@@ -3,21 +3,21 @@
 %h1 {
   color: $white;
   font-family: $font-sans;
-  font-size: 2.25em;
+  font-size: 2.25rem;
 }
 
 
 %h2{
   color: $light-purple;
   font-family: $font-sans;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 %p{
   font-family: $font-sans;
   color: $dark-grey;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 125%;
   font-weight: normal;
   & a{

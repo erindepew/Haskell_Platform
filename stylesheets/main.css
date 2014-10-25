@@ -67,14 +67,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .banner--title, .banner--logo:before, .button--DOWNLOAD .button--label, .button--label {
   color: #FFFFFF;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 2.25em;
+  font-size: 2.25rem;
 }
 
 /* line 10, ../sass/partials/global/extends/_base.scss */
 .promo-text--header, .subheader--MAIN, .downloads--header {
-  color: #442259;
+  color: #614273;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -82,7 +82,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .navigation--MAIN .navigation--links, #navigation--MOBILE .navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--subheader, .downloads--text, .downloads--instructions li {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #323232;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 125%;
   font-weight: normal;
 }
@@ -92,7 +92,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: inherit;
   display: inherit;
   font-family: inherit;
-  color: #442259;
+  color: #614273;
   font-size: inherit;
   line-height: inherit;
   text-decoration: none;
@@ -113,7 +113,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN {
   width: 93%;
-  background-color: #281434;
+  background-color: #482f58;
   padding: 0 0 0 7%;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -180,7 +180,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 59, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE {
-  background-color: #2e173b;
+  background-color: #4d335f;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   z-index: 5;
   width: 13em;
@@ -209,7 +209,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #FFFFFF;
   text-align: left;
   padding: 1em 0 1em 0.75em;
-  border-bottom: 1px solid #442259;
+  border-bottom: 1px solid #614273;
   margin: 0 0.75em;
 }
 /* line 88, ../sass/partials/components/navigation/_extends.scss */
@@ -298,7 +298,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .button--DOWNLOAD, .button--MAIN {
   width: 86%;
   margin: 0 auto;
-  background-color: #361b46;
+  background-color: #482f58;
   border-radius: 1.75em;
   padding: 1.5em 0;
   border: none;
@@ -309,7 +309,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 12, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD:hover, .button--MAIN:hover {
-  background-color: #442259;
+  background-color: #614273;
 }
 @media (min-width: 700px) {
   /* line 1, ../sass/partials/components/button/_extends.scss */
@@ -336,9 +336,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-/* line 38, ../sass/partials/components/button/_extends.scss */
+/* line 39, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD .button--label {
   font-size: 1em;
 }
@@ -485,7 +486,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 30, ../sass/partials/components/packages/_extends.scss */
 .packages--table-row {
   padding: 1em;
-  background-color: rgba(54, 27, 70, 0.2);
+  background-color: rgba(72, 47, 88, 0.2);
 }
 /* line 33, ../sass/partials/components/packages/_extends.scss */
 .packages--table-row:nth-of-type(2n) {
@@ -494,7 +495,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 39, ../sass/partials/components/packages/_extends.scss */
 .packages--header-table-row {
-  background-color: #361b46;
+  background-color: #482f58;
   padding: 1em;
 }
 
@@ -534,7 +535,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 86%;
   margin-top: 4em;
   position: relative;
-  background-color: #281434;
+  background-color: #482f58;
   padding: 0 7% 3em;
 }
 @media (min-width: 700px) {
@@ -596,18 +597,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/partials/components/downloads/_extends.scss */
 .downloads--header {
-  font-size: 1.3em;
+  font-size: 1.75rem;
   width: 100%;
   text-align: center;
   margin-bottom: 0.75em;
 }
 /* line 7, ../sass/partials/components/downloads/_extends.scss */
 .downloads--header:before {
-  color: black;
+  color: #482f58;
   font-family: 'Haskell_icon';
-  content: "\e602";
-  font-size: 3.25em;
+  font-size: 2rem;
   display: inline-block;
+  padding-right: 0.75rem;
 }
 
 /* line 16, ../sass/partials/components/downloads/_extends.scss */
@@ -667,9 +668,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: inline-block;
 }
 
-/* line 21, ../sass/partials/components/_downloads.scss */
+/* line 12, ../sass/partials/components/_downloads.scss */
+.downloads--MAC {
+  margin-top: 2.5rem;
+}
+/* line 19, ../sass/partials/components/_downloads.scss */
+.downloads--MAC .downloads--header:before {
+  content: "\e603";
+}
+
+/* line 27, ../sass/partials/components/_downloads.scss */
 .downloads--WINDOWS .downloads--header, .downloads--LINUX .downloads--header {
   clear: both;
+}
+
+/* line 39, ../sass/partials/components/_downloads.scss */
+.downloads--WINDOWS .downloads--header:before {
+  content: "\e604";
+}
+
+/* line 48, ../sass/partials/components/_downloads.scss */
+.downloads--LINUX .downloads--header:before {
+  content: "\e601";
 }
 
 /* line 1, ../sass/partials/components/_site-wrapper.scss */
