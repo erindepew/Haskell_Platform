@@ -137,7 +137,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .navigation--mobile-open:after, .navigation--mobile-close:after {
   content: "\e606";
   font-size: 3.5em;
-  color: #FFFFFF;
+  color: #32213d;
   display: block;
   position: absolute;
   left: 7%;
@@ -174,11 +174,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 700px) {
   /* line 36, ../sass/partials/components/navigation/_extends.scss */
   .navigation--MAIN .navigation--links {
-    padding: 1rem 0 0.8rem;
+    padding: 1rem 0 0.9rem;
     display: inline-block;
     width: 22%;
     text-align: center;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     -webkit-transition: border-color 500ms ease;
     -moz-transition: border-color 500ms ease;
     -o-transition: border-color 500ms ease;
@@ -187,7 +187,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   /* line 61, ../sass/partials/components/navigation/_extends.scss */
   .navigation--MAIN .navigation--links:hover {
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
   }
 }
 
@@ -221,27 +221,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #navigation--MOBILE .navigation--links {
   color: #FFFFFF;
   text-align: left;
-  padding: 1em 0 1em 0.75em;
-  border-bottom: 1px solid #614273;
-  margin: 0 0.75em;
+  padding: 0 0.75rem;
+  background-color: transparent;
 }
-/* line 98, ../sass/partials/components/navigation/_extends.scss */
+/* line 97, ../sass/partials/components/navigation/_extends.scss */
+#navigation--MOBILE .navigation--links:hover {
+  -webkit-transition: background-color 500ms ease;
+  -moz-transition: background-color 500ms ease;
+  -o-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+/* line 101, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
+  display: block;
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid #614273;
 }
-/* line 103, ../sass/partials/components/navigation/_extends.scss */
+/* line 109, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a:hover {
-  color: #FFFFFF;
+  color: #482f58;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: color 500ms ease;
+  -moz-transition: color 500ms ease;
+  -o-transition: color 500ms ease;
+  transition: color 500ms ease;
 }
 
 /* line 13, ../sass/partials/components/_navigation.scss */
 .navigation--MAIN .navigation--links-list:hover > li:hover {
   opacity: 1.0;
+  -webkit-transition: opacity 500ms ease;
+  -moz-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
 }
-/* line 17, ../sass/partials/components/_navigation.scss */
+/* line 18, ../sass/partials/components/_navigation.scss */
 .navigation--MAIN .navigation--links-list:hover > li {
   opacity: 0.4;
   -webkit-transition: opacity 500ms ease;
@@ -250,7 +269,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: opacity 500ms ease;
 }
 
-/* line 47, ../sass/partials/components/_navigation.scss */
+/* line 48, ../sass/partials/components/_navigation.scss */
 .navigation--mobile-close {
   display: none;
 }

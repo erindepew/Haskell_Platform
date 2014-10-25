@@ -12,6 +12,7 @@
 
   .navigation--links-list:hover > li:hover{
     opacity: 1.0;
+    @include transition( opacity, 500ms);
   }
 
   .navigation--links-list:hover > li{

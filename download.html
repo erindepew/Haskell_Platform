@@ -2,157 +2,179 @@
 <html>
 <head>
     <title>Haskell Platform</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/main.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
-
-<nav class="navigation--MAIN">
-    <ul class="navigation--links-list">
-        <li class="navigation--links">
-            <a href="#">Downloads</a>
-        </li>
-        <li class="navigation--links">
-            <a href="#">Community</a>
-        </li>
-        <li class="navigation--links">
-            <a href="#">Documentation</a>
-        </li>
-        <li class="navigation--links">
-            <a href="#">Learn</a>
-        </li>
-    </ul>
-
-</nav>
-<div class="banner--MAIN">
-    <div class="banner--header">
-        <span class="banner--logo"></span>
-        <h1 class="banner--title">Haskell Platform</h1>
-    </div>
-    <img class="banner--background-image" src="img/background-texture.png">
-</div>
-
-
-
-<div class="downloads--MAC">
-    <h1 class="downloads--header">Mac</h1>
-    <button class="button--DOWNLOAD">
-        <span class="button--label">Download - 32 bit </span>
-    </button>
-    <button class="button--DOWNLOAD">
-        <span class="button--label">Download - 64 bit</span>
-    </button>
-
-    <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 32 bit (10.6 or later) </span>
-    <span class="downloads--text">SHA-1: 15dd8762c9800308cb7cfdd16ea1a8e74988e06a</span>
-    <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 64 bit (10.6 or later) </span>
-    <span class="downloads--text">SHA-1: 89e6fb747816af69acabc5c04cee103257855614</span>
-
-    <span class="downloads--subheader">Download Instructions</span>
-    <ol class="downloads--instructions">
-        <li>1.  Double click the package icon to start the installer</li>
-        <li>2. Follow the instructions</li>
-    </ol>
-    <span class="downloads--subheader">Notes</span>
-    <span class="downloads--text">blah, blah... </span>
-</div>
-
-
-<div class="downloads--WINDOWS">
-    <h1 class="downloads--header">Windows</h1>
-    <button class="button--DOWNLOAD">
-        <span class="button--label">Download</span>
-    </button>
-
-    <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 32 bit (10.6 or later) </span>
-    <span class="downloads--text">SHA-1: 15dd8762c9800308cb7cfdd16ea1a8e74988e06a</span>
-    <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 64 bit (10.6 or later) </span>
-    <span class="downloads--text">SHA-1: 89e6fb747816af69acabc5c04cee103257855614</span>
-
-    <span class="downloads--subheader">Download Instructions</span>
-    <ol class="downloads--instructions">
-        <li>1.  Double click the package icon to start the installer</li>
-        <li>2. Follow the instructions</li>
-    </ol>
-    <span class="downloads--subheader">Notes</span>
-    <span class="downloads--text">blah, blah... </span>
-</div>
-
-
-<div class="downloads--LINUX">
-    <h1 class="downloads--header">Linux</h1>
-    <button class="button--DOWNLOAD">
-        <span class="button--label">Download</span>
-    </button>
-
-    <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 32 bit (10.6 or later) </span>
-    <span class="downloads--text">SHA-1: 15dd8762c9800308cb7cfdd16ea1a8e74988e06a</span>
-    <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 64 bit (10.6 or later) </span>
-    <span class="downloads--text">SHA-1: 89e6fb747816af69acabc5c04cee103257855614</span>
-
-    <span class="downloads--subheader">Download Instructions</span>
-    <ol class="downloads--instructions">
-        <li>1.  Double click the package icon to start the installer</li>
-        <li>2. Follow the instructions</li>
-    </ol>
-    <span class="downloads--subheader">Notes</span>
-    <span class="downloads--text">blah, blah... </span>
-</div>
-
-
-
-
-
-<footer class="footer--MAIN">
-    <div class="footer--content">
-        <h3 class="footer--content-header">Learn Haskell</h3>
-        <ul class="footer--content-list">
-            <li class="footer--content-list-link"><a href="#">What is Haskell?</a></li>
-            <li class="footer--content-list-link"><a href="#">Try Haskell in your browser</a></li>
-            <li class="footer--content-list-link"><a href="#">Learning Resources</a></li>
-            <li class="footer--content-list-link"><a href="#">Books and Tutorials</a></li>
-            <li class="footer--content-list-link"><a href="#">Library Documentation</a></li>
-            <li class="footer--content-list-link"><a href="#">School of Haskell</a></li>
+<div class="site-wrapper">
+    <nav class="navigation--MAIN">
+        <button class="navigation--mobile-open">open</button>
+        <button class="navigation--mobile-close">close</button>
+        <ul class="navigation--links-list">
+            <li class="navigation--links">
+                <a href="#">Downloads</a>
+            </li>
+            <li class="navigation--links">
+                <a href="#">Community</a>
+            </li>
+            <li class="navigation--links">
+                <a href="#">Documentation</a>
+            </li>
+            <li class="navigation--links">
+                <a href="#">Learn</a>
+            </li>
         </ul>
-    </div>
 
-    <div class="footer--content">
-        <h3 class="footer--content-header">Use Haskell</h3>
-        <ul class="footer--content-list">
-            <li class="footer--content-list-link"><a href="#">Download Haskell</a></li>
-            <li class="footer--content-list-link"><a href="#">Language Specification</a></li>
-            <li class="footer--content-list-link"><a href="#">Hackage Library Database</a></li>
-            <li class="footer--content-list-link"><a href="#">Applications and Libraries</a></li>
-            <li class="footer--content-list-link"><a href="#">Hoogle and Hayoo API search</a></li>
-            <li class="footer--content-list-link"><a href="#">IDEs, Editors, and Tools</a></li>
+    </nav>
+
+    <nav id="navigation--MOBILE">
+        <ul class="navigation--links-list">
+            <li class="navigation--links">
+                <a href="#">Downloads</a>
+            </li>
+            <li class="navigation--links">
+                <a href="#">Community</a>
+            </li>
+            <li class="navigation--links">
+                <a href="#">Documentation</a>
+            </li>
+            <li class="navigation--links">
+                <a href="#">Learn</a>
+            </li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="footer--content">
-        <h3 class="footer--content-header">Join the Community</h3>
-        <ul class="footer--content-list">
-            <li class="footer--content-list-link"><a href="#">Haskell on Reddit, Stack Overflow and G+</a></li>
-            <li class="footer--content-list-link"><a href="#">Mailing lists and IRC channels</a></li>
-            <li class="footer--content-list-link"><a href="#">Wiki (how to contribute)</a></li>
-            <li class="footer--content-list-link"><a href="#">Communities and Activities Reports</a></li>
-            <li class="footer--content-list-link"><a href="#">Haskell in Industry, Research and Education</a></li>
-            <li class="footer--content-list-link"><a href="#">Planet Haskell</a></li>
-            <li class="footer--content-list-link"><a href="#">Local User Groups</a></li>
-        </ul>
+    <div class="banner--MAIN">
+        <div class="banner--header">
+            <span class="banner--logo"></span>
+            <h1 class="banner--title">Haskell Platform</h1>
+        </div>
+        <img class="banner--background-image" src="img/background-texture.png">
     </div>
 
 
-    <div class="footer--content">
-        <h3 class="footer--content-header">Contribute</h3>
-        <ul class="footer--content-list">
-            <li class="footer--content-list-link"><a href="#">Bug Tracker</a></li>
-            <li class="footer--content-list-link"><a href="#">How to Help</a></li>
-            <li class="footer--content-list-link"><a href="#">Find Us on Github</a></li>
-        </ul>
-    </div>
-</footer>
 
+    <div class="downloads--MAC">
+        <h1 class="downloads--header">Mac</h1>
+        <button class="button--DOWNLOAD">
+            <span class="button--label">Download - 32 bit </span>
+        </button>
+        <button class="button--DOWNLOAD">
+            <span class="button--label">Download - 64 bit</span>
+        </button>
+
+        <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 32 bit (10.6 or later) </span>
+        <span class="downloads--text">SHA-1: 15dd8762c9800308cb7cfdd16ea1a8e74988e06a</span>
+        <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 64 bit (10.6 or later) </span>
+        <span class="downloads--text">SHA-1: 89e6fb747816af69acabc5c04cee103257855614</span>
+
+        <span class="downloads--subheader">Download Instructions</span>
+        <ol class="downloads--instructions">
+            <li>1.  Double click the package icon to start the installer</li>
+            <li>2. Follow the instructions</li>
+        </ol>
+        <span class="downloads--subheader">Notes</span>
+        <span class="downloads--text">blah, blah... </span>
+    </div>
+
+
+    <div class="downloads--WINDOWS">
+        <h1 class="downloads--header">Windows</h1>
+        <button class="button--DOWNLOAD">
+            <span class="button--label">Download</span>
+        </button>
+
+        <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 32 bit (10.6 or later) </span>
+        <span class="downloads--text">SHA-1: 15dd8762c9800308cb7cfdd16ea1a8e74988e06a</span>
+        <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 64 bit (10.6 or later) </span>
+        <span class="downloads--text">SHA-1: 89e6fb747816af69acabc5c04cee103257855614</span>
+
+        <span class="downloads--subheader">Download Instructions</span>
+        <ol class="downloads--instructions">
+            <li>1.  Double click the package icon to start the installer</li>
+            <li>2. Follow the instructions</li>
+        </ol>
+        <span class="downloads--subheader">Notes</span>
+        <span class="downloads--text">blah, blah... </span>
+    </div>
+
+
+    <div class="downloads--LINUX">
+        <h1 class="downloads--header">Linux</h1>
+        <button class="button--DOWNLOAD">
+            <span class="button--label">Download</span>
+        </button>
+
+        <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 32 bit (10.6 or later) </span>
+        <span class="downloads--text">SHA-1: 15dd8762c9800308cb7cfdd16ea1a8e74988e06a</span>
+        <span class="downloads--subheader">Haskell Platform 2013.2.0.0 for Mac OS X, 64 bit (10.6 or later) </span>
+        <span class="downloads--text">SHA-1: 89e6fb747816af69acabc5c04cee103257855614</span>
+
+        <span class="downloads--subheader">Download Instructions</span>
+        <ol class="downloads--instructions">
+            <li>1.  Double click the package icon to start the installer</li>
+            <li>2. Follow the instructions</li>
+        </ol>
+        <span class="downloads--subheader">Notes</span>
+        <span class="downloads--text">blah, blah... </span>
+    </div>
+
+
+
+
+
+    <footer class="footer--MAIN">
+        <div class="footer--content">
+            <h3 class="footer--content-header">Learn Haskell</h3>
+            <ul class="footer--content-list">
+                <li class="footer--content-list-link"><a href="#">What is Haskell?</a></li>
+                <li class="footer--content-list-link"><a href="#">Try Haskell in your browser</a></li>
+                <li class="footer--content-list-link"><a href="#">Learning Resources</a></li>
+                <li class="footer--content-list-link"><a href="#">Books and Tutorials</a></li>
+                <li class="footer--content-list-link"><a href="#">Library Documentation</a></li>
+                <li class="footer--content-list-link"><a href="#">School of Haskell</a></li>
+            </ul>
+        </div>
+
+        <div class="footer--content">
+            <h3 class="footer--content-header">Use Haskell</h3>
+            <ul class="footer--content-list">
+                <li class="footer--content-list-link"><a href="#">Download Haskell</a></li>
+                <li class="footer--content-list-link"><a href="#">Language Specification</a></li>
+                <li class="footer--content-list-link"><a href="#">Hackage Library Database</a></li>
+                <li class="footer--content-list-link"><a href="#">Applications and Libraries</a></li>
+                <li class="footer--content-list-link"><a href="#">Hoogle and Hayoo API search</a></li>
+                <li class="footer--content-list-link"><a href="#">IDEs, Editors, and Tools</a></li>
+            </ul>
+        </div>
+
+        <div class="footer--content">
+            <h3 class="footer--content-header">Join the Community</h3>
+            <ul class="footer--content-list">
+                <li class="footer--content-list-link"><a href="#">Haskell on Reddit, Stack Overflow and G+</a></li>
+                <li class="footer--content-list-link"><a href="#">Mailing lists and IRC channels</a></li>
+                <li class="footer--content-list-link"><a href="#">Wiki (how to contribute)</a></li>
+                <li class="footer--content-list-link"><a href="#">Communities and Activities Reports</a></li>
+                <li class="footer--content-list-link"><a href="#">Haskell in Industry, Research and Education</a></li>
+                <li class="footer--content-list-link"><a href="#">Planet Haskell</a></li>
+                <li class="footer--content-list-link"><a href="#">Local User Groups</a></li>
+            </ul>
+        </div>
+
+
+        <div class="footer--content">
+            <h3 class="footer--content-header">Contribute</h3>
+            <ul class="footer--content-list">
+                <li class="footer--content-list-link"><a href="#">Bug Tracker</a></li>
+                <li class="footer--content-list-link"><a href="#">How to Help</a></li>
+                <li class="footer--content-list-link"><a href="#">Find Us on Github</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
 
 </body>
 </html>

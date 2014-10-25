@@ -22,7 +22,7 @@
   &:after{
     content: "\e606";
     font-size: 3.5em;
-    color: $white;
+    color: darken($dark-purple, 8%);
     display: block;
     position: absolute;
     left: 7%;
@@ -51,15 +51,15 @@
     }
   }
   @include breakpoint($breakpoint--second-layout){
-    padding: 1rem 0 0.8rem;
+    padding: 1rem 0 0.9rem;
     display: inline-block;
     width: 22%;
     text-align: center;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     @include transition( border-color, 500ms);
     opacity: 1.0;
     &:hover{
-      border-bottom: 2px solid $white;
+      border-bottom: 1px solid $white;
 
     }
   }
@@ -92,16 +92,24 @@
   @extend %p;
   color: $white;
   text-align: left;
-  padding: 1em 0 1em 0.75em;
-  border-bottom: 1px solid $light-purple;
-  margin: 0 0.75em;
+  padding: 0 0.75rem;
+  background-color: transparent;
+  &:hover{
+    @include transition(background-color, 500ms);
+    background-color: rgba($white, 0.4);
+  }
   & a{
     text-decoration: none;
     color: $white;
     font-family: inherit;
     font-size: inherit;
+    display: block;
+    padding: 1rem 0.75rem;
+    border-bottom: 1px solid $light-purple;
     &:hover{
-      color: $white;
+      color: $dark-purple;
+      border-bottom: 1px solid transparent;
+      @include transition(color, 500ms);
     }
 }
 }
