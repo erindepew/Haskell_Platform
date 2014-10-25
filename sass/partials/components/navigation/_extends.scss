@@ -18,6 +18,7 @@
   font-family: 'Haskell_icon';
   background: transparent;
   border: none;
+  color: $dark-purple;
   &:after{
     content: "\e606";
     font-size: 3.5em;
@@ -50,8 +51,17 @@
     }
   }
   @include breakpoint($breakpoint--second-layout){
-    padding: 1em 10% 1em 0;
+    padding: 1rem 0 0.8rem;
     display: inline-block;
+    width: 22%;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    @include transition( border-color, 500ms);
+    opacity: 1.0;
+    &:hover{
+      border-bottom: 2px solid $white;
+
+    }
   }
 }
 

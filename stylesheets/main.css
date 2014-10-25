@@ -131,8 +131,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Haskell_icon';
   background: transparent;
   border: none;
+  color: #482f58;
 }
-/* line 21, ../sass/partials/components/navigation/_extends.scss */
+/* line 22, ../sass/partials/components/navigation/_extends.scss */
 .navigation--mobile-open:after, .navigation--mobile-close:after {
   content: "\e606";
   font-size: 3.5em;
@@ -149,36 +150,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
-/* line 35, ../sass/partials/components/navigation/_extends.scss */
+/* line 36, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links {
   color: #FFFFFF;
   text-align: left;
   display: none;
 }
-/* line 40, ../sass/partials/components/navigation/_extends.scss */
+/* line 41, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links:last-child {
   text-align: center;
 }
-/* line 43, ../sass/partials/components/navigation/_extends.scss */
+/* line 44, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
 }
-/* line 48, ../sass/partials/components/navigation/_extends.scss */
+/* line 49, ../sass/partials/components/navigation/_extends.scss */
 .navigation--MAIN .navigation--links a:hover {
   color: #FFFFFF;
 }
 @media (min-width: 700px) {
-  /* line 35, ../sass/partials/components/navigation/_extends.scss */
+  /* line 36, ../sass/partials/components/navigation/_extends.scss */
   .navigation--MAIN .navigation--links {
-    padding: 1em 10% 1em 0;
+    padding: 1rem 0 0.8rem;
     display: inline-block;
+    width: 22%;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-color 500ms ease;
+    -moz-transition: border-color 500ms ease;
+    -o-transition: border-color 500ms ease;
+    transition: border-color 500ms ease;
+    opacity: 1.0;
+  }
+  /* line 61, ../sass/partials/components/navigation/_extends.scss */
+  .navigation--MAIN .navigation--links:hover {
+    border-bottom: 2px solid #FFFFFF;
   }
 }
 
-/* line 59, ../sass/partials/components/navigation/_extends.scss */
+/* line 69, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE {
   background-color: #4d335f;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
@@ -192,19 +205,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 @media (min-width: 700px) {
-  /* line 59, ../sass/partials/components/navigation/_extends.scss */
+  /* line 69, ../sass/partials/components/navigation/_extends.scss */
   #navigation--MOBILE {
     display: none;
   }
 }
 
-/* line 75, ../sass/partials/components/navigation/_extends.scss */
+/* line 85, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links-list {
   width: 100%;
   height: 100%;
 }
 
-/* line 81, ../sass/partials/components/navigation/_extends.scss */
+/* line 91, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links {
   color: #FFFFFF;
   text-align: left;
@@ -212,19 +225,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom: 1px solid #614273;
   margin: 0 0.75em;
 }
-/* line 88, ../sass/partials/components/navigation/_extends.scss */
+/* line 98, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a {
   text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
 }
-/* line 93, ../sass/partials/components/navigation/_extends.scss */
+/* line 103, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a:hover {
   color: #FFFFFF;
 }
 
-/* line 38, ../sass/partials/components/_navigation.scss */
+/* line 13, ../sass/partials/components/_navigation.scss */
+.navigation--MAIN .navigation--links-list:hover > li:hover {
+  opacity: 1.0;
+}
+/* line 17, ../sass/partials/components/_navigation.scss */
+.navigation--MAIN .navigation--links-list:hover > li {
+  opacity: 0.4;
+  -webkit-transition: opacity 500ms ease;
+  -moz-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+/* line 47, ../sass/partials/components/_navigation.scss */
 .navigation--mobile-close {
   display: none;
 }

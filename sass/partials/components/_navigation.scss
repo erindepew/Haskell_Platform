@@ -10,6 +10,15 @@
     @extend %navigation--links-list;
   }
 
+  .navigation--links-list:hover > li:hover{
+    opacity: 1.0;
+  }
+
+  .navigation--links-list:hover > li{
+    opacity: 0.4;
+    @include transition( opacity, 500ms);
+  }
+
   .navigation--links{
     @extend %navigation--links;
   }
