@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 17, ../sass/partials/global/extends/_base.scss */
-.navigation--MAIN .navigation--links, #navigation--MOBILE .navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--dropdown-header, .downloads--subheader, .downloads--text, .downloads--instructions li {
+.navigation--MAIN .navigation--links, #navigation--MOBILE .navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--dropdown-header, .downloads--subheader, .downloads--dropdown-text, .downloads--text, .downloads--instructions li {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #323232;
   font-size: 1.6rem;
@@ -87,7 +87,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
 }
 /* line 23, ../sass/partials/global/extends/_base.scss */
-.navigation--MAIN .navigation--links a, #navigation--MOBILE .navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--dropdown-header a, .downloads--subheader a, .downloads--text a, .downloads--instructions li a {
+.navigation--MAIN .navigation--links a, #navigation--MOBILE .navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--dropdown-header a, .downloads--subheader a, .downloads--dropdown-text a, .downloads--text a, .downloads--instructions li a {
   font-size: 100%;
   float: inherit;
   display: inherit;
@@ -99,7 +99,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: color 0.5s ease;
 }
 /* line 33, ../sass/partials/global/extends/_base.scss */
-.navigation--MAIN .navigation--links a:hover, #navigation--MOBILE .navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--dropdown-header a:hover, .downloads--subheader a:hover, .downloads--text a:hover, .downloads--instructions li a:hover {
+.navigation--MAIN .navigation--links a:hover, #navigation--MOBILE .navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--dropdown-header a:hover, .downloads--subheader a:hover, .downloads--dropdown-text a:hover, .downloads--text a:hover, .downloads--instructions li a:hover {
   color: #8a45b5;
 }
 
@@ -718,21 +718,50 @@ html {
   color: #323232;
   font-size: 1.1rem;
   margin-left: 0.75rem;
+  display: inline-block;
 }
 
-/* line 60, ../sass/partials/components/downloads/_extends.scss */
-.downloads--text {
+/* line 63, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text, .downloads--text {
   clear: both;
   float: left;
   width: 100%;
   margin: 0 auto 1em;
 }
-/* line 66, ../sass/partials/components/downloads/_extends.scss */
-.downloads--text:first-of-type {
+/* line 69, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text:first-of-type, .downloads--text:first-of-type {
   margin: 0 auto 0.5em;
 }
 
-/* line 71, ../sass/partials/components/downloads/_extends.scss */
+/* line 76, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text h2 {
+  color: #614273;
+  font-weight: bold;
+  line-height: 150%;
+  margin-top: 1rem;
+}
+/* line 82, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text p {
+  margin: 1rem 0;
+}
+/* line 85, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text a {
+  text-decoration: underline;
+}
+/* line 88, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text ul {
+  margin: 0 0 1rem 2rem;
+}
+/* line 90, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text ul li {
+  list-style: disc;
+}
+/* line 92, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-text ul li ul li {
+  list-style: circle;
+}
+
+/* line 99, ../sass/partials/components/downloads/_extends.scss */
 .downloads--instructions {
   margin: 0.4em 0 2em 0;
   display: inline-block;
@@ -760,6 +789,15 @@ html {
 /* line 48, ../sass/partials/components/_downloads.scss */
 .downloads--LINUX .downloads--header:before {
   content: "\e601";
+}
+
+/* line 64, ../sass/partials/components/_downloads.scss */
+.downloads--dropdown-header.close:after {
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 /* line 1, ../sass/partials/components/_site-wrapper.scss */

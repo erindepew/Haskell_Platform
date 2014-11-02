@@ -15,3 +15,15 @@ $(function() {
 
 });
 
+//function for notes toggle
+
+$(document).ready(function() {
+    $(".downloads--dropdown-text").hide();  //start with text hidden
+
+    $('.downloads--dropdown-header').click(function() {
+
+        $(this).next('.downloads--dropdown-text').slideToggle(500);
+        $(this).toggleClass('close');
+
+    });
+}); // end ready

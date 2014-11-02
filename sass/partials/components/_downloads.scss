@@ -60,8 +60,18 @@
   @extend %downloads--dropdown-header;
 }
 
+.downloads--dropdown-header.close{
+  &:after{
+    @include rotate(90);
+  }
+}
+
 .downloads--text{
   @extend %downloads--text;
+}
+
+.downloads--dropdown-text{
+  @extend %downloads--dropdown-text;
 }
 
 .downloads--instructions{

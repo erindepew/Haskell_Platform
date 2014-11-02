@@ -4,3 +4,16 @@
   -o-transition : $object $time ease;
   transition : $object $time ease;
 }
+
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
