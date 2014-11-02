@@ -1,6 +1,6 @@
 %packages--MAIN{
   width: 86%;
-  margin: 2.5em auto 0;
+  margin: 2.5rem auto 0;
   @include breakpoint($breakpoint--second-layout){
     width: 43%;
     float: right;
@@ -14,7 +14,7 @@
   font-weight: bold;
   width: 100%;
   float: left;
-  margin: 1em 0 0.75em;
+  margin: 1rem 0 0.75rem;
   @include breakpoint($breakpoint--second-layout){
     text-align: center;
     float: none;
@@ -24,11 +24,11 @@
 
 %packages--table{
   width: 100%;
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
 }
 
 %packages--table-row{
-  padding: 1em;
+  padding: 1rem;
   background-color: rgba($medium-purple, 0.2);
   &:nth-of-type(2n){
     background-color: $white;
@@ -38,14 +38,14 @@
 
 %packages--header-table-row{
   background-color: $medium-purple;
-  padding: 1em;
+  padding: 1rem;
 
 }
 
 %packages--package-table-column{
   @extend %p;
   font-weight: bold;
-  margin: 0.5em 0 0.5em 1em;
+  margin: 0.75rem 0 0.75rem 1.5rem;
   display:inline-block;
 
 }

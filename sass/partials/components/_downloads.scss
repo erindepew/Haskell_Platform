@@ -55,6 +55,11 @@
   @extend %downloads--subheader;
 }
 
+
+.downloads--dropdown-header{
+  @extend %downloads--dropdown-header;
+}
+
 .downloads--text{
   @extend %downloads--text;
 }

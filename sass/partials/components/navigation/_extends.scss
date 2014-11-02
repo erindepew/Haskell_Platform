@@ -5,7 +5,7 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 5;
-  height: 3.25em;
+  height: 5.25rem;
 }
 
 
@@ -21,12 +21,12 @@
   color: $dark-purple;
   &:after{
     content: "\e606";
-    font-size: 3.5em;
+    font-size: 4.5rem;
     color: darken($dark-purple, 8%);
     display: block;
     position: absolute;
     left: 7%;
-    top: 0.05em;
+    top: 0.5rem;
   }
   @include breakpoint($breakpoint--second-layout){
     display: none;
@@ -51,7 +51,7 @@
     }
   }
   @include breakpoint($breakpoint--second-layout){
-    padding: 1rem 0 0.9rem;
+    padding: 1.6rem 0 1.5rem;
     display: inline-block;
     width: 22%;
     text-align: center;
@@ -70,12 +70,12 @@
   background-color: lighten($dark-purple, 2%);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   z-index: 5;
-  width: 13em;
-  left: -13em;
+  width: 21rem;
+  left: -21rem;
   height: 96.23%;
   position:absolute;
-  padding: 2em 0;
-  padding: 2em 0;
+  padding: 2rem 0;
+  padding: 2rem 0;
   display: block;
   @include breakpoint($breakpoint--second-layout){
     display: none;
@@ -92,7 +92,7 @@
   @extend %p;
   color: $white;
   text-align: left;
-  padding: 0 0.75rem;
+  padding: 0 1.25rem;
   background-color: transparent;
   &:hover{
     @include transition(background-color, 500ms);
@@ -100,11 +100,12 @@
   }
   & a{
     text-decoration: none;
+    text-decoration: none;
     color: $white;
     font-family: inherit;
     font-size: inherit;
     display: block;
-    padding: 1rem 0.75rem;
+    padding: 1.5rem 1rem;
     border-bottom: 1px solid $light-purple;
     &:hover{
       color: $dark-purple;

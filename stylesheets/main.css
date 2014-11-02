@@ -67,27 +67,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .banner--title, .banner--logo:before, .button--DOWNLOAD .button--label, .button--label {
   color: #FFFFFF;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 2.25rem;
+  font-size: 3.5rem;
 }
 
 /* line 10, ../sass/partials/global/extends/_base.scss */
 .promo-text--header, .subheader--MAIN, .downloads--header {
   color: #614273;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
 }
 
 /* line 17, ../sass/partials/global/extends/_base.scss */
-.navigation--MAIN .navigation--links, #navigation--MOBILE .navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--subheader, .downloads--text, .downloads--instructions li {
+.navigation--MAIN .navigation--links, #navigation--MOBILE .navigation--links, .promo-text--text, .release-info--header, .release-info--information, .release-info--info-list, .packages--header, .packages--package-table-column, .packages--version-table-column, .packages--date-table-column, .footer--content-header, .footer--content-list-link, .downloads--dropdown-header, .downloads--subheader, .downloads--text, .downloads--instructions li {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #323232;
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 125%;
   font-weight: normal;
 }
 /* line 23, ../sass/partials/global/extends/_base.scss */
-.navigation--MAIN .navigation--links a, #navigation--MOBILE .navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--subheader a, .downloads--text a, .downloads--instructions li a {
+.navigation--MAIN .navigation--links a, #navigation--MOBILE .navigation--links a, .promo-text--text a, .release-info--header a, .release-info--information a, .release-info--info-list a, .packages--header a, .packages--package-table-column a, .packages--version-table-column a, .packages--date-table-column a, .footer--content-header a, .footer--content-list-link a, .downloads--dropdown-header a, .downloads--subheader a, .downloads--text a, .downloads--instructions li a {
   font-size: 100%;
   float: inherit;
   display: inherit;
@@ -99,8 +99,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: color 0.5s ease;
 }
 /* line 33, ../sass/partials/global/extends/_base.scss */
-.navigation--MAIN .navigation--links a:hover, #navigation--MOBILE .navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--subheader a:hover, .downloads--text a:hover, .downloads--instructions li a:hover {
+.navigation--MAIN .navigation--links a:hover, #navigation--MOBILE .navigation--links a:hover, .promo-text--text a:hover, .release-info--header a:hover, .release-info--information a:hover, .release-info--info-list a:hover, .packages--header a:hover, .packages--package-table-column a:hover, .packages--version-table-column a:hover, .packages--date-table-column a:hover, .footer--content-header a:hover, .footer--content-list-link a:hover, .downloads--dropdown-header a:hover, .downloads--subheader a:hover, .downloads--text a:hover, .downloads--instructions li a:hover {
   color: #8a45b5;
+}
+
+/* line 39, ../sass/partials/global/extends/_base.scss */
+html {
+  font-size: 62.5%;
 }
 
 @font-face {
@@ -118,7 +123,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 5;
-  height: 3.25em;
+  height: 5.25rem;
 }
 
 /* line 12, ../sass/partials/components/navigation/_extends.scss */
@@ -136,12 +141,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 22, ../sass/partials/components/navigation/_extends.scss */
 .navigation--mobile-open:after, .navigation--mobile-close:after {
   content: "\e606";
-  font-size: 3.5em;
+  font-size: 4.5rem;
   color: #32213d;
   display: block;
   position: absolute;
   left: 7%;
-  top: 0.05em;
+  top: 0.5rem;
 }
 @media (min-width: 700px) {
   /* line 17, ../sass/partials/components/navigation/_extends.scss */
@@ -174,7 +179,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 700px) {
   /* line 36, ../sass/partials/components/navigation/_extends.scss */
   .navigation--MAIN .navigation--links {
-    padding: 1rem 0 0.9rem;
+    padding: 1.6rem 0 1.5rem;
     display: inline-block;
     width: 22%;
     text-align: center;
@@ -196,12 +201,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #4d335f;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   z-index: 5;
-  width: 13em;
-  left: -13em;
+  width: 21rem;
+  left: -21rem;
   height: 96.23%;
   position: absolute;
-  padding: 2em 0;
-  padding: 2em 0;
+  padding: 2rem 0;
+  padding: 2rem 0;
   display: block;
 }
 @media (min-width: 700px) {
@@ -221,7 +226,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #navigation--MOBILE .navigation--links {
   color: #FFFFFF;
   text-align: left;
-  padding: 0 0.75rem;
+  padding: 0 1.25rem;
   background-color: transparent;
 }
 /* line 97, ../sass/partials/components/navigation/_extends.scss */
@@ -235,14 +240,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 101, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a {
   text-decoration: none;
+  text-decoration: none;
   color: #FFFFFF;
   font-family: inherit;
   font-size: inherit;
   display: block;
-  padding: 1rem 0.75rem;
+  padding: 1.5rem 1rem;
   border-bottom: 1px solid #614273;
 }
-/* line 109, ../sass/partials/components/navigation/_extends.scss */
+/* line 110, ../sass/partials/components/navigation/_extends.scss */
 #navigation--MOBILE .navigation--links a:hover {
   color: #482f58;
   border-bottom: 1px solid transparent;
@@ -278,64 +284,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .banner--MAIN {
   width: 100%;
   overflow: hidden;
-  height: 7em;
+  height: 9rem;
   position: relative;
-  padding-top: 3em;
+  padding-top: 5rem;
+}
+@media (min-width: 700px) {
+  /* line 1, ../sass/partials/components/banner/_extends.scss */
+  .banner--MAIN {
+    height: 10rem;
+  }
 }
 
-/* line 9, ../sass/partials/components/banner/_extends.scss */
+/* line 12, ../sass/partials/components/banner/_extends.scss */
 .banner--background-image {
   width: 100%;
   min-width: 1000px;
 }
 
-/* line 14, ../sass/partials/components/banner/_extends.scss */
+/* line 17, ../sass/partials/components/banner/_extends.scss */
 .banner--header {
   left: 7%;
   position: absolute;
-  margin-top: 1.75em;
+  margin-top: 2rem;
 }
 
-/* line 20, ../sass/partials/components/banner/_extends.scss */
+/* line 23, ../sass/partials/components/banner/_extends.scss */
 .banner--title {
   font-weight: bold;
-  top: 1.1em;
+  top: 1.1rem;
   display: inline-block;
   vertical-align: top;
-  padding: 0.25em 0 0 0.5em;
+  padding: 0.25em 0 0 0.5rem;
   letter-spacing: 0.75px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 @media (min-width: 400px) {
-  /* line 20, ../sass/partials/components/banner/_extends.scss */
+  /* line 23, ../sass/partials/components/banner/_extends.scss */
   .banner--title {
-    font-size: 2em;
+    font-size: 3rem;
   }
 }
 @media (min-width: 700px) {
-  /* line 20, ../sass/partials/components/banner/_extends.scss */
+  /* line 23, ../sass/partials/components/banner/_extends.scss */
   .banner--title {
-    font-size: 2.25em;
+    font-size: 3.5rem;
   }
 }
-
 /* line 38, ../sass/partials/components/banner/_extends.scss */
+.banner--title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 45, ../sass/partials/components/banner/_extends.scss */
 .banner--logo:before {
   font-family: Haskell_icon;
   content: "\e600";
-  font-size: 2.25em;
+  font-size: 2.25rem;
   display: inline-block;
 }
 @media (min-width: 400px) {
-  /* line 38, ../sass/partials/components/banner/_extends.scss */
+  /* line 45, ../sass/partials/components/banner/_extends.scss */
   .banner--logo:before {
-    font-size: 2.75em;
+    font-size: 3.58rem;
   }
 }
 @media (min-width: 700px) {
-  /* line 38, ../sass/partials/components/banner/_extends.scss */
+  /* line 45, ../sass/partials/components/banner/_extends.scss */
   .banner--logo:before {
-    font-size: 3.25em;
+    font-size: 4.24rem;
   }
 }
 
@@ -344,11 +361,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 86%;
   margin: 0 auto;
   background-color: #482f58;
-  border-radius: 1.75em;
-  padding: 1.5em 0;
+  border-radius: 1.75rem;
+  padding: 1.5rem 0;
   border: none;
   display: block;
-  margin-bottom: 3.75em;
+  margin-bottom: 3.75rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
   transition: background-color 0.5s ease;
 }
@@ -360,25 +377,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 1, ../sass/partials/components/button/_extends.scss */
   .button--DOWNLOAD, .button--MAIN {
     width: 60%;
-    margin-bottom: 6em;
+    margin-bottom: 6rem;
   }
 }
 @media (min-width: 1000px) {
   /* line 1, ../sass/partials/components/button/_extends.scss */
   .button--DOWNLOAD, .button--MAIN {
     width: 35%;
-    margin-bottom: 6em;
+    margin-bottom: 6rem;
   }
 }
 
 /* line 26, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD {
-  padding: 0.85em 0;
+  padding: 0.85rem 0;
 }
 
 /* line 31, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD .button--label, .button--label {
-  font-size: 2.5em;
+  font-size: 2.75rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -386,7 +403,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 39, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD .button--label {
-  font-size: 1em;
+  font-size: 1.2rem;
 }
 
 /* line 1, ../sass/partials/components/promo-text/_extends.scss */
@@ -394,17 +411,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
   display: inline-block;
   float: left;
-  margin-bottom: 1.5em;
+  margin-bottom: 2rem;
 }
 /* line 6, ../sass/partials/components/promo-text/_extends.scss */
 .promo-text--MAIN:last-child {
-  margin-bottom: 2.5em;
+  margin-bottom: 3.5rem;
 }
 @media (min-width: 700px) {
   /* line 1, ../sass/partials/components/promo-text/_extends.scss */
   .promo-text--MAIN {
     width: 31.25%;
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
     padding: 0 1.5%;
   }
   /* line 13, ../sass/partials/components/promo-text/_extends.scss */
@@ -414,7 +431,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 16, ../sass/partials/components/promo-text/_extends.scss */
   .promo-text--MAIN:last-child {
     padding: 0 0 0 1.5%;
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
   }
 }
 
@@ -424,25 +441,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 86%;
   overflow: visible;
   display: block;
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 @media (min-width: 700px) {
   /* line 24, ../sass/partials/components/promo-text/_extends.scss */
   ._promo-text--container {
-    margin-top: 3.5em;
+    margin-top: 3.5rem;
   }
 }
 
 /* line 36, ../sass/partials/components/promo-text/_extends.scss */
 .promo-text--header {
-  margin-bottom: 0.35em;
+  margin-bottom: 0.75rem;
   text-align: center;
 }
 @media (min-width: 700px) {
   /* line 36, ../sass/partials/components/promo-text/_extends.scss */
   .promo-text--header {
     text-align: left;
-    margin-bottom: 0.55em;
   }
 }
 
@@ -494,7 +510,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/partials/components/packages/_extends.scss */
 .packages--MAIN {
   width: 86%;
-  margin: 2.5em auto 0;
+  margin: 2.5rem auto 0;
 }
 @media (min-width: 700px) {
   /* line 1, ../sass/partials/components/packages/_extends.scss */
@@ -511,7 +527,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
   width: 100%;
   float: left;
-  margin: 1em 0 0.75em;
+  margin: 1rem 0 0.75rem;
 }
 @media (min-width: 700px) {
   /* line 12, ../sass/partials/components/packages/_extends.scss */
@@ -525,12 +541,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 25, ../sass/partials/components/packages/_extends.scss */
 .packages--table {
   width: 100%;
-  margin-top: 1.5em;
+  margin-top: 1.5rem;
 }
 
 /* line 30, ../sass/partials/components/packages/_extends.scss */
 .packages--table-row {
-  padding: 1em;
+  padding: 1rem;
   background-color: rgba(72, 47, 88, 0.2);
 }
 /* line 33, ../sass/partials/components/packages/_extends.scss */
@@ -541,13 +557,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 39, ../sass/partials/components/packages/_extends.scss */
 .packages--header-table-row {
   background-color: #482f58;
-  padding: 1em;
+  padding: 1rem;
 }
 
 /* line 45, ../sass/partials/components/packages/_extends.scss */
 .packages--package-table-column {
   font-weight: bold;
-  margin: 0.5em 0 0.5em 1em;
+  margin: 0.75rem 0 0.75rem 1.5rem;
   display: inline-block;
 }
 
@@ -578,15 +594,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .footer--MAIN {
   display: inline-block;
   width: 86%;
-  margin-top: 4em;
+  margin-top: 4rem;
   position: relative;
   background-color: #482f58;
-  padding: 0 7% 3em;
+  padding: 0 7% 3rem;
 }
 @media (min-width: 700px) {
   /* line 1, ../sass/partials/components/footer/_extends.scss */
   .footer--MAIN {
-    margin-top: 6em;
+    margin-top: 6rem;
     padding: 0 7%;
   }
 }
@@ -595,7 +611,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .footer--content {
   width: 49%;
   float: left;
-  margin: 1.5em 0 1em;
+  margin: 1.5rem 0 1rem;
   text-align: center;
 }
 /* line 19, ../sass/partials/components/footer/_extends.scss */
@@ -607,7 +623,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .footer--content {
     width: 23%;
     float: left;
-    margin: 1.75em 0 4em 0;
+    margin: 3rem 0 4rem 0;
     padding: 0 1%;
     text-align: left;
   }
@@ -615,17 +631,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 32, ../sass/partials/components/footer/_extends.scss */
 .footer--content-header {
-  font-size: 1.25em;
+  font-size: 1.75rem;
   color: #FFFFFF;
   font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 /* line 40, ../sass/partials/components/footer/_extends.scss */
 .footer--content-list-link {
   color: #FFFFFF;
   line-height: 110%;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.4rem;
 }
 /* line 45, ../sass/partials/components/footer/_extends.scss */
 .footer--content-list-link a {
@@ -642,7 +658,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/partials/components/downloads/_extends.scss */
 .downloads--header {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
   width: 100%;
   text-align: center;
   margin-bottom: 0.75em;
@@ -651,7 +667,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .downloads--header:before {
   color: #482f58;
   font-family: 'Haskell_icon';
-  font-size: 2rem;
+  font-size: 3rem;
   display: inline-block;
   padding-right: 0.75rem;
 }
@@ -686,7 +702,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 39, ../sass/partials/components/downloads/_extends.scss */
-.downloads--subheader {
+.downloads--dropdown-header, .downloads--subheader {
   clear: both;
   float: left;
   width: 100%;
@@ -695,19 +711,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
 }
 
-/* line 49, ../sass/partials/components/downloads/_extends.scss */
+/* line 51, ../sass/partials/components/downloads/_extends.scss */
+.downloads--dropdown-header:after {
+  font-family: 'Haskell_icon';
+  content: "\e607";
+  color: #323232;
+  font-size: 1.1rem;
+  margin-left: 0.75rem;
+}
+
+/* line 60, ../sass/partials/components/downloads/_extends.scss */
 .downloads--text {
   clear: both;
   float: left;
   width: 100%;
   margin: 0 auto 1em;
 }
-/* line 55, ../sass/partials/components/downloads/_extends.scss */
+/* line 66, ../sass/partials/components/downloads/_extends.scss */
 .downloads--text:first-of-type {
   margin: 0 auto 0.5em;
 }
 
-/* line 60, ../sass/partials/components/downloads/_extends.scss */
+/* line 71, ../sass/partials/components/downloads/_extends.scss */
 .downloads--instructions {
   margin: 0.4em 0 2em 0;
   display: inline-block;
