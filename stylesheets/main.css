@@ -359,17 +359,18 @@ html {
 /* line 1, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD, .button--MAIN {
   width: 86%;
-  margin: 0 auto;
+  margin: 0 7%;
   background-color: #482f58;
   border-radius: 1.75rem;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
+  text-align: center;
   border: none;
-  display: block;
+  display: inline-block;
   margin-bottom: 3.75rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
   transition: background-color 0.5s ease;
 }
-/* line 12, ../sass/partials/components/button/_extends.scss */
+/* line 13, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD:hover, .button--MAIN:hover {
   background-color: #614273;
 }
@@ -377,23 +378,25 @@ html {
   /* line 1, ../sass/partials/components/button/_extends.scss */
   .button--DOWNLOAD, .button--MAIN {
     width: 60%;
-    margin-bottom: 6rem;
+    margin: 0 20% 6rem 20%;
   }
 }
 @media (min-width: 1000px) {
   /* line 1, ../sass/partials/components/button/_extends.scss */
   .button--DOWNLOAD, .button--MAIN {
     width: 35%;
-    margin-bottom: 6rem;
+    margin: 0 32.5% 6rem 32.5%;
   }
 }
 
-/* line 26, ../sass/partials/components/button/_extends.scss */
+/* line 27, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD {
-  padding: 0.85rem 0;
+  padding: 1.25rem 0;
+  margin: 0;
+  text-decoration: none;
 }
 
-/* line 31, ../sass/partials/components/button/_extends.scss */
+/* line 34, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD .button--label, .button--label {
   font-size: 2.75rem;
   font-weight: bold;
@@ -401,7 +404,7 @@ html {
   text-decoration: none;
 }
 
-/* line 39, ../sass/partials/components/button/_extends.scss */
+/* line 42, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD .button--label {
   font-size: 1.2rem;
 }
@@ -686,7 +689,7 @@ html {
 
 /* line 25, ../sass/partials/components/downloads/_extends.scss */
 .downloads--MAC .button--DOWNLOAD {
-  width: 49.2%;
+  width: 49.5%;
   margin-bottom: 1em;
   float: left;
 }
@@ -698,7 +701,7 @@ html {
 /* line 34, ../sass/partials/components/downloads/_extends.scss */
 .downloads--WINDOWS .button--DOWNLOAD, .downloads--LINUX .button--DOWNLOAD {
   width: 80%;
-  margin-bottom: 1em;
+  margin: 0 10% 1em 10%;
 }
 
 /* line 39, ../sass/partials/components/downloads/_extends.scss */

@@ -1,11 +1,12 @@
 %button--MAIN{
   width: 86%;
-  margin: 0 auto;
+  margin: 0 7%;
   background-color: $medium-purple;
   border-radius: 1.75rem;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
+  text-align: center;
   border: none;
-  display: block;
+  display: inline-block;
   margin-bottom: 3.75rem;
   box-shadow: 0 1px 2px 0 rgba($black, 0.22);
   transition: background-color 0.5s ease;
@@ -14,18 +15,20 @@
   }
   @include breakpoint($breakpoint--second-layout){
     width: 60%;
-    margin-bottom: 6rem;
+    margin: 0 20% 6rem 20%;
   }
   @include breakpoint($breakpoint--third-layout){
     width: 35%;
-    margin-bottom: 6rem;
+    margin: 0 32.5% 6rem 32.5%;
   }
 }
 
 
 %button--DOWNLOAD{
   @extend %button--MAIN;
-  padding: 0.85rem 0;
+  padding: 1.25rem 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 %button--label{
