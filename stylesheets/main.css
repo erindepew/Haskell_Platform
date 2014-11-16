@@ -369,8 +369,9 @@ html {
   margin-bottom: 3.75rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
   transition: background-color 0.5s ease;
+  text-decoration: none;
 }
-/* line 13, ../sass/partials/components/button/_extends.scss */
+/* line 14, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD:hover, .button--MAIN:hover {
   background-color: #614273;
 }
@@ -389,14 +390,14 @@ html {
   }
 }
 
-/* line 27, ../sass/partials/components/button/_extends.scss */
+/* line 28, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD {
   padding: 1.25rem 0;
   margin: 0;
   text-decoration: none;
 }
 
-/* line 34, ../sass/partials/components/button/_extends.scss */
+/* line 35, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD .button--label, .button--label {
   font-size: 2.75rem;
   font-weight: bold;
@@ -404,7 +405,7 @@ html {
   text-decoration: none;
 }
 
-/* line 42, ../sass/partials/components/button/_extends.scss */
+/* line 43, ../sass/partials/components/button/_extends.scss */
 .button--DOWNLOAD .button--label {
   font-size: 1.2rem;
 }

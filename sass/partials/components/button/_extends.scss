@@ -10,6 +10,7 @@
   margin-bottom: 3.75rem;
   box-shadow: 0 1px 2px 0 rgba($black, 0.22);
   transition: background-color 0.5s ease;
+  text-decoration: none;
   &:hover{
      background-color: $light-purple;
   }
