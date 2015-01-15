@@ -1,4 +1,6 @@
-Haskell_Platform
+Haskell Platform Redesign
 ================
 
-HTML and CSS for the new Haskell Platform design 
+Redesign for the Haskell Platform site in HTML5 and CSS3 using Compass and Sass.  
+Current Haskell Platform site ---> https://www.haskell.org/platform/  
+
